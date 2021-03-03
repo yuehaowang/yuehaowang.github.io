@@ -1,427 +1,87 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-      https://www.apache.org/licenses/LICENSE-2.0
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Showcase | Yuehao's Lab</title>
-    <link rel='shortcut icon' href='/favicon.png' type='image/png' />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180293791-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-180293791-1');
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="/stylesheets.css" rel="stylesheet" >
+    <title>Yuehao Wang</title>
   </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div id="container" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary mdl-shadow--2dp">
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row ">
-    </div>
-    <div class="mdl-layout__header-row">
-        <h3>Yuehao Wang</h3>
-    </div>
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-    </div>
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-        <a href="/" class="mdl-layout__tab">Home</a>
-<a href="/showcase" class="mdl-layout__tab is-active">Showcase</a>
-<a href="/articles" class="mdl-layout__tab">Articles</a>
-        <a href="https://github.com/yuehaowang" target="_blank" class="mdl-layout__tab">Github <i class="material-icons">link</i></a>
-    </div>
-</header>
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="showcase">
-    <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text">
-                <h4>Games</h4>
-            
-                <ul class="demo-list-three mdl-list">
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--cyan mdl-list__item-avatar">games</i>
-                            <span>SanguoTD</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/sanguo_td" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">games</i>
-                            <span>Flying Stone</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/games/flying_stone/index.html"><i class="material-icons">play_circle_outline</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--blue mdl-list__item-avatar">games</i>
-                            <span>Crazy Racing</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/games/crazy_racing/index.html"><i class="material-icons">play_circle_outline</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--pink mdl-list__item-avatar">games</i>
-                            <span>Ink Spill</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/games/ink_spill/index.html"><i class="material-icons">play_circle_outline</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--grey mdl-list__item-avatar">games</i>
-                            <span>Raglan and Over</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/games/raglan_and_over/index.html"><i class="material-icons">play_circle_outline</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--purple mdl-list__item-avatar">games</i>
-                            <span>The Best Arithmetic</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/games/the_best_arithmetic/index.html"><i class="material-icons">play_circle_outline</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--blue-gray mdl-list__item-avatar">games</i>
-                            <span>Mine Sweeper</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/games/minesweeper/index.html"><i class="material-icons">play_circle_outline</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--deep-orange mdl-list__item-avatar">games</i>
-                            <span>Fan Sangoku</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/games/fan_sangoku/index.html"><i class="material-icons">play_circle_outline</i></a>
-                        </span>
-                    </li>
-                </ul>
+  <body>
+    <div class="container">
+        <main>
+            <h1><a href="/">Yuehao</a>'s Showcase</h1>
+            <div class="section" id="showcase">
+                <p class="item">
+                    When I was 13 years old, I began to study computer programming and create video games under my father's instruction.
+                    I believe this experience sparks my initial passion for computer vision and graphics.
+                    In addition to creating games, I also developed utility tools and explored <a href="https://en.wikipedia.org/wiki/Creative_coding">creative coding</a> (see <i>Portals</i> and <i>Greeting Card</i>).
+                    <br><br>
+                    Here is the archive of my works. Some of them are open sourced and hosted on <a href="https://github.com/yuehaowang">my Github</a>.
+                    <br>(Note: * implies the work was created after I graduated from the high school.)
+                </p>
+
+                <div class="row item">
+                    <div class="col-4 abstract">
+                        <strong>Games</strong>
+                        <ul>
+                            <li><a href="/games/crazy_racing/">Crazy Racing</a></li>
+                            <li><a href="/game/fan_sangoku/">Fan Sangoku</a></li>
+                            <li><a href="/games/flying_stone/">Flying Stone</a></li>
+                            <li><a href="/games/greedy_bug/">Greedy Bug</a></li>
+                            <li><a href="/games/ink_spill/">Ink Spill</a></li>
+                            <li><a href="/games/minesweeper/">Minesweeper</a></li>
+                            <li><a href="/games/puzzle/">Puzzle</a></li>
+                            <li><a href="/games/raglan_and_over/">Raglan and Over</a></li>
+                            <li><a href="/games/the_best_arithmetic/">The Best Arithmetic</a></li>
+                            <li><a href="https://github.com/yuehaowang/sanguo_td">SanguoTD</a></li>
+                            <li><a href="https://github.com/yuehaowang/ShadowScent">Shadow Scent (Cubot)</a> *</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 abstract">
+                        <strong>Toys</strong>
+                        <ul>
+                            <li><a href="https://github.com/yuehaowang/BetaClass">Beta Class</a> *</li>
+                            <li><a href="https://github.com/yuehaowang/ToyFlow">Toy Flow</a> *</li>
+                            <li><a href="https://github.com/yuehaowang/posea">Posea</a> *</li>
+                            <li><a href="https://github.com/CitiCup-Lokout">Lokout</a> *</li>
+                            <li><a href="/demo/portals/index.html">Portals</a></li>
+                            <li><a href="/demo/TowerDefense/index.html">Tower Defense</a></li>
+                            <li><a href="/demo/box2d_bomb/index.html">Box2d Bomb</a></li>
+                            <li><a href="/demo/box2d_linkage/index.html">Box2d Linkage</a></li>
+                            <li><a href="/demo/ridebike_box2d/index.html">Box2d Ride Bike</a></li>
+                            <li><a href="/demo/drag_and_drop_robot/index.html">Drag and Drop Robot</a></li>
+                            <li><a href="/demo/sat_js/index.html">SAT Algorithm Demo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 abstract">
+                        <strong>Tools & Libraries</strong>
+                        <ul>
+                            <li><a href="https://github.com/yuehaowang/pylash_engine">Pylash</a></li>
+                            <li><a href="https://github.com/yuehaowang/greeting_card">Greeting Card</a></li>
+                            <li><a href="/apps/greeting_card_creator/index.html">Greeting Card Creator</a> *</li>
+                            <li><a href="https://github.com/yuehaowang/duckling">Duckling</a> *</li>
+                            <li><a href="/apps/wave_superposition/index.html">Wave Superposition</a></li>
+                            <li><a href="https://github.com/yuehaowang/irmap">IRMap</a></li>
+                            <li><a href="https://github.com/yuehaowang/jpp.js">Jpp.js</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text">
-                <h4>Libraries</h4>
-
-                <ul class="demo-list-three mdl-list">
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-avatar">code</i>
-                            <span>Pylash Engine</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/pylash_engine" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-avatar">code</i>
-                            <span>Duckling *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/duckling" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-avatar">code</i>
-                            <span>Greeting Card</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/greeting_card" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-avatar">code</i>
-                            <span>IRMap</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/irmap" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-avatar">code</i>
-                            <span>Jpp.js</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/jpp.js" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                </ul>
+            <div class="shadow">
+                <img style="width: 100%;" class="img-fluid img-thumbnail" src="/images/demo/games_poster.png">
             </div>
-        </div>
-    </section>
+        </main>
 
-    <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text">
-                <h4>Musical Compositions</h4>
-
-                <ul class="demo-list-three mdl-list">
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--blue mdl-list__item-avatar">music_note</i>
-                            <span>Band Mix *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/player/?idx=0" target="_blank"><i class="material-icons">album</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--red mdl-list__item-avatar">music_note</i>
-                            <span>Yangtze River Park *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/player/?idx=1" target="_blank"><i class="material-icons">album</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--pink mdl-list__item-avatar">music_note</i>
-                            <span>Birthday Fireworks *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/player/?idx=2" target="_blank"><i class="material-icons">album</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">music_note</i>
-                            <span>Balcony *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/player/?idx=3" target="_blank"><i class="material-icons">album</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--purple mdl-list__item-avatar">music_note</i>
-                            <span>Travelling Apollo *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/player/?idx=4" target="_blank"><i class="material-icons">album</i></a>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
-        <div class="mdl-card__supporting-text">
-                <h4>Toys</h4>
-
-                <ul class="demo-list-three mdl-list">
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Portals</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/demo/portals/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Beta Class *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/BetaClass" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Toy Flow *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/ToyFlow" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Posea *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/yuehaowang/posea" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Lokout *</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="https://github.com/CitiCup-Lokout" target="_blank"><i class="material-icons">call_made</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Box2D Bomb</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/demo/box2d_bomb/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Box2D Linkage</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/demo/box2d_linkage/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Drag and Drop Robot</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/demo/drag_and_drop_robot/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>SAT Algorithm</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/demo/sat_js/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Ride Bike Box2D</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/demo/ridebike_box2d/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Wave Superposition</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/apps/wave_superposition/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Greeting Card Creator</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/apps/greeting_card_creator/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                    <li class="mdl-list__item mdl-list__item--one-line">
-                        <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-color--teal mdl-list__item-avatar">toys</i>
-                            <span>Tower Defense</span>
-                        </span>
-                        <span class="mdl-list__item-secondary-content">
-                            <a class="mdl-list__item-secondary-action" href="/demo/TowerDefense/index.html"><i class="material-icons">play_circle_fill</i></a>
-                        </span>
-                    </li>
-                </ul>
-        </div>
-        </div>
-    </section>
-
-    <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text">
-                <h4>Copyrights</h4>
-
-                <ul>
-                    <li>Games and toys are licensed under a <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPLv3.0 License</a>.</li>
-                    <li>Musical compositions are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a></li>
-                    <li>Licenses of libraries are placed in their project repositories.</li>
-                </ul> 
-            </div>
-        </div>
-    </section>
-
-    <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-        <div class="mdl-card mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__supporting-text">
-                <h4>Notes</h4>
-
-                <ul>
-                    <li><b>*</b> implies the work was done during my undergraduate period.</li>
-                    <li>Others were made when I was a high school student.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-</div>
-      </main>
-      <footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">
-            Copyright &copy; 2020 Yuehao Wang. Themed with
-            <a class="mdl-color-text--grey-100" href="https://getmdl.io/" target="_blank">MDL</a>.
-        </div>
-    </div>
-    <div class="mdl-mini-footer__right-section">
-        <ul class="mdl-mini-footer__link-list">
-            <li><a href="https://github.com/yuehaowang" target="_blank">Github</a></li>
-            <li><a href="https://www.instagram.com/yuehao727/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/yuehaowang/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </div>
-</footer>
+        <footer class="text-end">
+            &copy; 2021 Yuehao Wang. Last update: Mar 4, 2021.<br>
+        </footer>
     </div>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>

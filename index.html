@@ -1,343 +1,235 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-      https://www.apache.org/licenses/LICENSE-2.0
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Home | Yuehao's Lab</title>
-    <link rel='shortcut icon' href='/favicon.png' type='image/png' />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180293791-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-180293791-1');
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="/stylesheets.css" rel="stylesheet" >
+    <title>Yuehao Wang</title>
   </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div id="container" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary mdl-shadow--2dp">
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row ">
-    </div>
-    <div class="mdl-layout__header-row">
-        <h3>Yuehao Wang</h3>
-    </div>
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-    </div>
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-        <a href="/" class="mdl-layout__tab is-active">Home</a>
-<a href="/showcase" class="mdl-layout__tab">Showcase</a>
-<a href="/articles" class="mdl-layout__tab">Articles</a>
-        <a href="https://github.com/yuehaowang" target="_blank" class="mdl-layout__tab">Github <i class="material-icons">link</i></a>
-    </div>
-</header>
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="home">
-    <section class="section--center mdl-grid mdl-grid--no-spacing">
-    <div class="mdl-cell mdl-cell--12-col">
-        <h4>About</h4>
-        <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-                <div class="mdl-card__supporting-text justify-text">
-                    I am a senior undergraduate student majoring in Computer Science at ShanghaiTech University. My topics of interest include computer graphics, computer vision and deep learning. Recently, I work on projects in neural rendering, 3D vision, and graph learning. Outside of academics, my hobbies include creating games, designing webpages, writing songs, and cycling.
-                    <div style="margin-top: 30px">
-                        <div>
-                            <i class="material-icons inline-material-icon">mail</i>
-                            <b>Email:</b> <i>wangyh3 [at] shanghaitech [dot] edu [dot] cn</i>
-                        </div>
-                        <div style="margin-top: 10px">
+  <body>
+    <div class="container">
+        <main>
+            <div id="info" class="row">
+                <div class="col-4 avatar">
+                    <img style="width: 100%;" src="/images/portrait.jpg" />
+                </div>
+                <div class="col-8 contact">
+                    <div class="d-flex justify-content-center">
+                        <p>
+                            <name>Yuehao Wang</name><br><br>
                             <span>
-                                <i class="material-icons inline-material-icon">account_box</i>
-                                <a href="/downloads/Resume_YuehaoWang.pdf">[Resume]</a>
+                                Undergraduate Student<br>
+                                <a href="https://sist.shanghaitech.edu.cn/sist_en/">SIST</a>@<a href="https://www.shanghaitech.edu.cn/eng/">ShanghaiTech University</a><br>
+                                Pudong New District, Shanghai
+                            </span><br><br>
+                            <span>
+                                wangyh3 [at] shanghaitech.edu.cn<br>
+                                [<a href="/downloads/Resume_YuehaoWang.pdf">Resume</a>]
+                                [<a href="https://github.com/yuehaowang" target="_blank">Github</a>]
+                                [<a href="https://www.linkedin.com/in/yuehaowang" target="_blank">LinkedIn</a>]
+                                [<a href="https://www.instagram.com/yuehao727/" target="_blank">Instagram</a>]
                             </span>
-                            <span style="margin-left: 10px;">
-                                <i class="material-icons inline-material-icon">inbox</i>
-                                <a href="https://github.com/yuehaowang" target="_blank">[Github]</a>
-                            </span>
-                            <span style="margin-left: 10px;">
-                                <i class="material-icons inline-material-icon">camera</i>
-                                <a href="https://instagram.com/yuehao727" target="_blank">[Photos]</a>
-                            </span>
-                            <span style="margin-left: 10px;">
-                                <i class="material-icons inline-material-icon">person_add</i>
-                                <a href="https://linkedin.com/in/yuehaowang" target="_blank">[LinkedIn]</a>
-                            </span>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- <h4>Contact</h4>
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell contact-list mdl-cell--12-col">
-                <div class="mdl-grid mdl-cell--10-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
-                    <div class="mdl-cell mdl-cell--6-col">
-                        <ul class="mdl-list">
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                    <i class="material-icons mdl-list__item-icon">email</i>
-                                    wangyuehao1999#gmail.com
-                                </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                    <i class="material-icons mdl-list__item-icon">inbox</i>
-                                    Github: <a href="https://github.com/yuehaowang" style="margin-left: 5px;" target="_blank">@yuehaowang</a>
-                                </span>
-                            </li>
+            <hr>
+            <div id="bio">
+                I am a senior undergraduate student majoring in Computer Science at ShanghaiTech University.
+                I am working in the <a href="http://vic.shanghaitech.edu.cn/">Visual and Data Intelligence Center</a> under supervision of <a href="http://www.yu-jingyi.com/">Prof. Jingyi Yu</a> and <a href="http://faculty.sist.shanghaitech.edu.cn/faculty/liuxp/">Prof. Xiaopei Liu</a>.
+                I also spent a summer working with <a href="https://www.cis.upenn.edu/~jshi/">Prof. Jianbo Shi</a> remotely.
+                Outside of academics, my hobbies include <a href="/showcase/">creating games</a>, designing webpages, <a href="#art_music">writing songs</a>, and cycling.
+            </div>
+            <hr>
+
+            <div class="section" id="research">
+                <heading>Research</heading>
+
+                <p class="item">
+                    My topics of interest include computer graphics, computer vision and deep learning.
+                    In particular, I work on projects in neural rendering, 3D reconstruction, and graph learning.
+                    Below are listed my research works.
+                    <br>(Note: * indicates equal contribution.)
+                </p>
+
+                <div class="row item">
+                    <div class="col-3 thumbnail">
+                        <img width="100%" src="/images/paper_thumbnail/sogcn.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle>SoGCN: Second-Order Graph Convolutional Networks</papertitle><br>
+                        <span><a href="http://peihaowang.github.io">Peihao Wang</a>*, <u>Yuehao Wang</u>*, <a href="http://linhuavvv.com/">Hua Lin</a>, <a href="https://www.cis.upenn.edu/~jshi/">Jianbo Shi</a></span>
+                        <br>
+                        <span>Submitted to <i>ICML 2021</i></span>
+                        <br><br>
+                        <span>
+                            We show that multi-layer second-order graph convolution (SoGC) is sufficient to attain the ability of expressing polynomial spectral filters with arbitrary coefficients.
+                            <br>
+                            [<a href="https://peihaowang.github.io/archive/Wang_SoGCN_ICML_2021_preprint.pdf">Pdf</a>] [<a href="https://peihaowang.github.io/archive/Wang_SoGCN_ICML_2021_supp.pdf">Supplement</a>] [<a href="https://github.com/yuehaowang/SoGCN">Code</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <div class="col-3 thumbnail">
+                        <img width="100%" src="/images/paper_thumbnail/nhr.jpg" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle>Multi-view Neural Human Rendering</papertitle><br>
+                        <span><a href="http://wuminye.com">Minye Wu</a>, <u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=kYHf73IAAAAJ">Qiang Hu</a>, <a href="http://www.yu-jingyi.com/">Jingyi Yu</a></span>
+                        <br>
+                        <span>Accepted by <i>CVPR 2020</i></span>
+                        <br>
+                        <span>
+                            We present an end-to-end Neural Human Renderer (NHR) for dynamic human captures under the multi-view setting.
+                            <br>
+                            [<a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_Multi-View_Neural_Human_Rendering_CVPR_2020_paper.pdf">Pdf</a>] [<a href="https://github.com/wuminye/NHR">Code</a>] [<a href="https://wuminye.github.io/NHR/">Webpage</a>]
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="teaching">
+                <heading>Teaching</heading>
+
+                <div class="row item">
+                    <div class="col-4 thumbnail align-self-center">
+                        <img width="100%" style="vertical-align: middle;" src="/images/shtc_logo.svg" />
+                    </div>
+                    <div class="col-8 abstract align-self-center">
+                        <ul>
+                            <li>CS171 Computer Graphics - Spring 2021 (TA)</li>
+                            <li>MATH1112 Linear Algebra - Fall 2019, Fall 2020 (TA)</li>
+                            <li><a href="http://www.utechacademy.cn/" target="_blank">UTech Academy AI Camp</a> - Summer 2020 (TA of Data Science Track)</li>
+                            <li>SI100 Introduction to Computer Programming - Fall 2018 (TA)</li>
                         </ul>
                     </div>
-                    <div class="mdl-cell mdl-cell--6-col">
-                        <ul class="mdl-list">
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                    <i class="material-icons mdl-list__item-icon">camera</i>
-                                    Instagram: <a href="https://www.instagram.com/yuehao727/" style="margin-left: 5px;" target="_blank">@yuehao727</a>
-                                </span>
-                            </li>
-                            <li class="mdl-list__item">
-                                <span class="mdl-list__item-primary-content">
-                                    <i class="material-icons mdl-list__item-icon">person_add</i>
-                                    LinkedIn: <a href="https://www.linkedin.com/in/yuehaowang/" style="margin-left: 5px;" target="_blank">yuehaowang</a>
-                                </span>
-                            </li>
+                </div>
+            </div>
+
+            <div class="section" id="other_projects">
+                <heading>Other Projects</heading>
+
+                <div class="row item">
+                    <div class="col-3 thumbnail">
+                        <img width="100%" src="/images/demo/lets_cg.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle>Let's CG <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/lets_cg" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/lets_cg on GitHub">Star</a></span></papertitle>
+                        <br><br>
+                        <span>
+                            A course project implemented essential algorithms and applications for rendering and geometry processing in the area of computer graphics, including OpenGL, global illumination, volume rendering,
+                            Loop subdivision, etc.
+                            <br>
+                            [<a href="https://github.com/yuehaowang/lets_CG">Github</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <div class="col-3 thumbnail">
+                        <img width="100%" src="/images/demo/pylash_tower_defense_sq.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle>Pylash <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/pylash_engine" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/pylash_engine on GitHub">Star</a></span></papertitle>
+                        <br><br>
+                        <span>
+                            A Python 2D game framework, created when I was a high school student, with a series of common modules implemented, such as 2D graphics, event systems, media systems, tween animation, collision detection, etc.
+                            <br>
+                            [<a href="https://github.com/yuehaowang/pylash_engine">Github</a>] [<a href="https://pypi.org/project/pylash-engine/">PyPI</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <div class="col-3 thumbnail align-self-center">
+                        <img width="100%" src="/images/demo/greeting_card3.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle>Greeting Card <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/greeting_card" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/greeting_card on GitHub">Star</a></span></papertitle>
+                        <br><br>
+                        <span>
+                            Greeting Card provides an interactive animation to show the message brick by brick. Your receivers just need to tap the screen until they understand what you want to express.
+                            <br>
+                            [<a href="https://github.com/yuehaowang/greeting_card">Github</a>] [<a href="/demo/greeting_card/">Demo</a>]
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="art_music">
+                <heading>Art & Music</heading>
+
+                <p class="item">
+                    I am a hardcore of music, especially Rock & Roll music. I am fond of songs composed by Led Zeppelin, Pink Floyd, Queen, and The Beatles.
+                    I play guitar and try to write songs when I have spare time. My favorite guitarists are Jimmy Page, David Gilmour and George Harrison.
+                </p>
+
+                <div class="row item">
+                    <div class="col-3 thumbnail">
+                        <img class="img-thumbnail" width="100%" src="/images/Apollo_in_the_sky.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle>Apollo in the Sky</papertitle>
+                        <br><br>
+                        <span>
+                            As a music amateur, Yuehao Wang made this toy music album with Apple's Garageband™. The album is named after 1970's United States human spaceflight program "Apollo",
+                            standing for authors' exploring in musical world is exactly like a spaceship travelling over the galaxy.
+                            <br>
+                            [<a href="/player/">Listen Online</a>]
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="collaborators">
+                <heading>Student Collaborators</heading>
+
+                <p class="item">
+                    I have worked with many excellent collaborators during my academic journey.
+                    I would like to express my gratitude to them for their efforts devoted to our jobs.
+                </p>
+
+                <div class="row item">
+                    <div class="col-6 abstract">
+                        <strong>Research</strong>
+                        <ul>
+                            <li><a href="https://peihaowang.github.io">Peihao Wang</a> (B.Eng @ ShanghaiTech)</li>
+                            <li><a href="https://dzhange.github.io">Ge Zhang</a> (B.Eng @ ShanghaiTech)</li>
+                            <li><a href="http://wuminye.com">Minye Wu</a> (PhD @ ShanghaiTech)</li>
+                            <li><a href="http://linhuavvv.com">Hua Lin</a> (MS @ CAS)</li>
+                            <li>Rui Wang (B.Eng @ ShanghaiTech)</li>
+                            <li><a href="https://www.linkedin.com/in/philipxyc/">Yincen Xia</a> (MS @ UPenn)</li>
+                            <li>Guangyuan Weng (B.Eng @ ShanghaiTech)</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 abstract">
+                        <strong>Teaching</strong>
+                        <ul>
+                            <li>Chenqi Luo (MS @ ShanghaiTech)</li>
+                            <li>Yu Wu (B.Eng @ ShanghaiTech)</li>
+                            <li>Aijia Yao (B.Eng @ ShanghaiTech)</li>
+                            <li>Yawen Xiao (B.S @ ShanghaiTech)</li>
+                            <li><a href="https://scholar.google.com/citations?user=GE8fpdwAAAAJ">Ziwen Zhuang</a> (B.Eng @ ShanghaiTech)</li>
+                            <li>Jason Wu (PhD @ NYU)</li>
+                            <li><a href="https://www.linkedin.com/in/zhen-zhu-22553524/">Zhen Zhu</a> (PhD @ Stanford)</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </main>
 
-        <h4>Research</h4>
-        <section class="work_item section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header style="overflow: hidden;" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-                <img style="width: 210px;" src="/images/paper_thumbnail/sogcn.png" />
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>SoGCN: Second-Order Graph Convolutional Networks</h5>
-                    <p class="authors">
-                        <a href="http://peihaowang.github.io">Peihao Wang</a>*, <u>Yuehao Wang</u>*, <a href="http://linhuavvv.com/">Hua Lin</a>, <a href="https://www.cis.upenn.edu/~jshi/">Jianbo Shi</a>
-                        <br>Submitted to <i>ICML 2021</i>, under review</i>
-                    </p>
-                    
-                    <div>
-                        We introduce a second-order graph convolution (SoGC), a maximally localized kernel, that can express a polynomial spectral filter of order K with arbitrary coefficients. We argue that the SoGC is a simple design capable of forming the basic building block of graph convolution, playing the same role as 3x3 kernels in CNNs.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="work_item section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header style="overflow: hidden;" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-                <img style="width: 200px;" src="/images/paper_thumbnail/nhr.jpg" />
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>Multi-view Neural Human Rendering</h5>
-                    <p class="authors">
-                        <a href="http://wuminye.com">Minye Wu</a>, <u>Yuehao Wang</u>, Qiang Hu, <a href="http://www.yu-jingyi.com/">Jingyi Yu</a>
-                        <br>Accepted by <i>CVPR 2020</i>
-                    </p>
-                    
-                    <div>
-                        We present an end-to-end Neural Human Renderer (NHR) for dynamic human captures under the multi-view setting. NHR adopts PointNet++ for feature extraction (FE) to enable robust 3D correspondence matching on low quality, dynamic 3D reconstructions.
-                    </div>
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="http://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_Multi-View_Neural_Human_Rendering_CVPR_2020_paper.pdf" class="mdl-button">View PDF</a>
-                    <a href="http://wuminye.com/NHR" class="mdl-button">Project Page</a>
-                </div>
-            </div>
-        </section>
-
-        <h4>Course Projects</h4>
-        <section class="work_item section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header style="overflow: hidden;" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-                <img style="height: 230px;" src="/images/demo/lets_cg.png" />
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>
-                        Let's CG
-                        <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/lets_cg" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/lets_cg on GitHub">Star</a></span>
-                    </h5>
-                    
-                    <div>
-                        This project comprises several essential algorithms and applications of rendering and geometry processing in computer graphics domain, including a tiny encapsulation of OpenGL, Loop subdivision algorithm, ray tracing, global illumination and volume rendering.
-                    </div>
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="https://github.com/yuehaowang/lets_cg" class="mdl-button">Source Code</a>
-                </div>
-            </div>
-        </section>
-        <section class="work_item section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>
-                        Reinforcement Cache
-                        <span class="github-btn-icon"><a class="github-button" href="https://github.com/peihaowang/DRLCache" data-icon="octicon-star" data-show-count="true" aria-label="Star peihaowang/DRLCache on GitHub">Star</a></span>
-                    </h5>
-                    <p class="authors">
-                        <a href="http://peihaowang.github.io">Peihao Wang</a>*, <u>Yuehao Wang</u>*, Rui Wang*
-                        <br>Excellent Course Project at <i>CS181 Artificial Intelligence</i>
-                    </p>
-                    
-                    <div>
-                        We adopt a reinforcement learning-based method to cache replacement strategy, aiming to improve the miss rate of existing traditional cache replacement policies. The main idea of modeling is to regard the strategy as a MDP so that we can employ DRL to learn cache eviction patterns.
-                    </div>
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="https://peihaowang.github.io/archive/Wang_DRL_Cache_2020_report.pdf" class="mdl-button">View Report</a>
-                    <a href="https://github.com/peihaowang/DRLCache" class="mdl-button">Source Code</a>
-                </div>
-            </div>
-        </section>
-        <section class="work_item section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>Offer Pool</h5>
-                    <p class="authors">
-                        <u>Yuehao Wang</u>, Zhenghao Ni, Lianghao Zhao
-                        <br>Excellent Course Project at <i>CS190B Web and Text Mining</i>
-                    </p>
-                    
-                    <div>
-                        We utilize data mining techniques to predict admission of target universities. With text data crawling from related websites, we train a regression model which receives your major, TOEFL, GRE, GPA, target universities, etc., and outputs probabilities that target universities will give you offers.
-                    </div>
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="https://github.com/yuehaowang/CS190B-WebAndTextMining-OfferPool" class="mdl-button">Source Code</a>
-                </div>
-            </div>
-        </section>
-        <section class="work_item section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header style="overflow: hidden;" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-                <img style="height: 320px;" src="/images/demo/shadow_scent.png" />
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>
-                        Shadow Scent (Cubot)
-                        <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/ShadowScent" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/ShadowScent on GitHub">Star</a></span>
-                    </h5>
-                    <p class="authors">
-                        <u>Yuehao Wang</u>, <a href="https://www.linkedin.com/in/philipxyc/">Yincen Xia</a>, <a href="http://www.liubai01.cn/">Yintao Xu</a>, <a href="http://peihaowang.github.io">Peihao Wang</a>, Hanbo Xiao
-                        <br>The Best Course Project at Roadshow of <i>SEMI1001 Design Thinking</i>
-                    </p>
-                    
-                    <div>
-                        A mobile game prototype which is friendly to visually impaired people. After desk research and field interviews on entertainment of visually impaired people, we design this game prototype aiming to improve video game's user experience and sociability for those vulnerable people.
-                    </div>
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="https://github.com/yuehaowang/ShadowScent" class="mdl-button">Source Code</a>
-                </div>
-            </div>
-        </section>
-
-        <h4>Teaching</h4>
-        <section class="work_item section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-                <div class="mdl-card__supporting-text justify-text">
-                    <ul>
-                        <li><h6>MATH1112 Linear Algebra - Fall 2019, Fall 2020 (TA)</h6></li>
-                        <li><h6><a href="http://utechacademy.cn/">UTech Academy AI Camp</a> - Summer 2020 (TA of Data Science Track)</h6></li>
-                        <li><h6>SI100 Introduction to Computer Programming - Fall 2018 (TA)</h6></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <h4>Libraries and Tools</h4>
-        <section class="section--center mdl-color--dark mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>
-                        Pylash Engine
-                        <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/pylash_engine" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/pylash_engine on GitHub">Star</a></span>
-                    </h5>
-                    Pylash is a 2D game framework in Python, which was developed when I was a high school student. Inspired from my experience designing and developing video games, this framework is integrated with various essential modules including 2D graphics rendering (based on PySide2), event systems, tween animation, multimedia systems, SAT collision detection, etc.
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="https://github.com/yuehaowang/pylash_engine" class="mdl-button">View More</a>
-                </div>
-            </div>
-        </section>
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header style="overflow: hidden;" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-                <img style="height: 280px;" src="/images/demo/greeting_card1.png" />
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>
-                        Greeting Card
-                        <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/greeting_card" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/greeting_card on GitHub">Star</a></span>
-                    </h5>
-                    You may want to write some warm words to your best friends, parents or lover. Plain text may bore them. Greeting Card provides a magnificent animation to show the message brick by brick. Receivers just need to tap the screen until they make sense of what you want to express, maybe it's your gratitude or your love.
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="https://github.com/yuehaowang/greeting_card" class="mdl-button">View More</a>
-                </div>
-            </div>
-        </section>
-
-        <h4>Entertainments</h4>
-        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header style="overflow: hidden;" class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-                <img style="width: 270px;" src="/images/Apollo_in_the_sky.png" />
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card__supporting-text justify-text">
-                    <h5>Apollo in the Sky</h5>
-                    As a music amateur, Yuehao Wang made this toy music album with Apple's Garageband&trade;. The album is named after 1970's United States human spaceflight program "Apollo", standing for authors' exploring in musical world is exactly like a spaceship travelling over the galaxy. Songs in this album are incorporated with various musical styles including rock and roll, Chinese traditional style, house, electro funk, R&B, etc.
-                </div>
-                <div class="mdl-card__actions">
-                    <a href="/player/" target="_blank" class="mdl-button">Listen Online</a>
-                </div>
-            </div>
-        </section>
-    </div>
-    </section>
-</div>
-      </main>
-      <footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">
-            Copyright &copy; 2020 Yuehao Wang. Themed with
-            <a class="mdl-color-text--grey-100" href="https://getmdl.io/" target="_blank">MDL</a>.
-        </div>
-    </div>
-    <div class="mdl-mini-footer__right-section">
-        <ul class="mdl-mini-footer__link-list">
-            <li><a href="https://github.com/yuehaowang" target="_blank">Github</a></li>
-            <li><a href="https://www.instagram.com/yuehao727/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/yuehaowang/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </div>
-</footer>
+        <footer class="text-end">
+            &copy; 2021 Yuehao Wang. Last update: Mar 4, 2021.<br>
+            The design of this website is inspired by <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://richzhang.github.io/">Richard Zhang</a>.
+        </footer>
     </div>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
