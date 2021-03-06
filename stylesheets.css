@@ -109,8 +109,11 @@ span.highlight {
 }
 
 ul {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0px;
-  padding: 0px;
 }
 
 main {
@@ -169,5 +172,5 @@ main {
 
 footer {
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
