@@ -174,3 +174,7 @@ footer {
   padding: 20px;
   margin-top: 60px;
 }
+
+#bio {
+  text-align: justify;
+}
