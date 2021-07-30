@@ -14,6 +14,9 @@
 <!-- partial:index.partial.html -->
 <div class="container">
     <div class="column add-bottom">
+        <div style="display: flex; justify-content: center; margin-bottom: 70px;">
+            <img class="album-cover" src="/images/July.jpg">
+        </div>
         <div id="mainwrap">
             <div id="nowPlay">
                 <span id="npAction">Paused...</span><span id="npTitle"></span>
@@ -26,11 +29,12 @@
                     <a id="btnPrev"><i class="fas fa-backward"></i></a>
                     <a id="btnNext"><i class="fas fa-forward"></i></a>
                 </div>
-            </div>
+            </div>            
             <div id="plwrap">
                 <ul id="plList"></ul>
             </div>
         </div>
+        
     </div>
     <div class="column add-bottom center">
         <p>Music by Y. Wang with GarageBand</p>
@@ -41,7 +45,18 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.5.6/plyr.min.js'></script>
-<script  src="/player/script.js"></script>
+<script src="/player/player.js"></script>
+<script>
+jQuery(function($) {
+    var tracks = [{
+        "track": 1,
+        "name": "The Way To Kowloon",
+        "duration": "1:29",
+        "file": "The_Way_to_Kowloon"
+    }];
+    createPlayer($, tracks);
+});
+</script>
 
 </body>
 </html>
