@@ -143,9 +143,14 @@ main {
 .section papertitle {
   font-size: 18px;
   font-weight: 700;
+  display: block;
+  max-width: 550px;
 }
 .section span {
   font-size: 14px;
+}
+.section .highlight{
+  background: #ffffe0;
 }
 
 
