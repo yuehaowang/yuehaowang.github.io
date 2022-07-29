@@ -153,6 +153,10 @@ main {
   background: #ffffe0;
 }
 
+.section .highlight-gray{
+  background: #f5f5f5;
+}
+
 
 #info .contact {
   padding: 2.5%;
