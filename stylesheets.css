@@ -157,6 +157,10 @@ main {
   background: #f8f9fa;
 }
 
+.section .highlight-deeper {
+  background-color: #ffffcd;
+}
+
 
 #info .contact {
   padding: 2.5%;
@@ -181,7 +185,8 @@ main {
 
 footer {
   padding: 20px;
-  margin-top: 60px;
+  padding-right: 0px;
+  margin-top: 0px;
 }
 
 #bio {
