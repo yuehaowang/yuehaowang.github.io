@@ -131,14 +131,18 @@ main {
 .section {
   margin-top: 40px;
 }
-.section .thumbnail{
+.section .thumbnail {
   padding: 20px;
 }
-.section .abstract{
+.section .abstract {
   padding: 20px;
 }
-.section .item{
+.section .item {
   margin-top: 10px;
+  transition: background-color 0.2s;
+}
+.section .item:hover {
+  background-color: #f1f1f1;
 }
 .section papertitle {
   font-size: 18px;
@@ -161,6 +165,19 @@ main {
   background-color: #ffffcd;
 }
 
+.section .highlight-dark {
+  color: #eee;
+  background-color: #222;
+  background-image: linear-gradient(#555, #222);
+}
+
+.section .highlight-dark a {
+  color: #ff0000;
+}
+
+.section .highlight-dark a:hover {
+  color: #eee;
+}
 
 #info .contact {
   padding: 2.5%;
@@ -177,7 +194,7 @@ main {
   padding: 2.5%;
 }
 
-.github-btn-icon{
+.github-btn-icon {
   display: inline-flex;
   vertical-align: middle;
   margin-left: 10px;
@@ -191,4 +208,11 @@ footer {
 
 #bio {
   text-align: justify;
+}
+
+.over-video div .overlay-video {
+  position: relative;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.5s
 }

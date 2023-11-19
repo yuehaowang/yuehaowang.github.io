@@ -25,13 +25,13 @@
                         <p>
                             <name>Yuehao Wang</name><br><br>
                             <span>
-                                Year-2 PhD Student<br>
-                                Department of Computer Science and Engineering<br>
+                                Master of Philosophy<br>
+                                Dept. of Computer Science and Engineering<br>
                                 The Chinese University of Hong Kong <br>
                                 Sha Tin, New Territories, Hong Kong SAR
                             </span><br><br>
                             <span>
-                                <i class="bi-envelope" style="font-size: 1.0rem; color: black; padding-right: 1px;"></i> yhwang21 [at] cse.cuhk.edu.hk<br>
+                                <i class="bi-envelope" style="font-size: 1.0rem; color: black; padding-right: 1px;"></i> yhwang [at] link.cuhk.edu.hk<br>
                                 <!-- [<a href="/downloads/Resume_YuehaoWang.pdf">Resume</a>] -->
                                 [<a href="/showcase/">Showcase</a>]
                                 [<a href="https://scholar.google.com/citations?user=WMAx_-gAAAAJ&hl=en" target="_blank">Google Scholar</a>]
@@ -44,53 +44,150 @@
 
             <hr>
             <div id="bio">
-                I am pursuing PhD degree at The Chinese University of Hong Kong advised by Prof. Qi Dou.
-                Before that, I obtained my B.Eng. degree at ShanghaiTech University under supervision of Prof. Xiaopei Liu and Prof. Jingyi Yu.
-                <!-- During my summer research in 2020, I have been working with Prof. Jianbo Shi remotely. -->
-                Outside of academics, my hobbies include playing guitar, creative coding and designing games (<a href="/showcase/">check out my showcase</a>).
+                I am a final year M.Phil. student at The Chinese University of Hong Kong, where I am advised by <a href="https://www.cse.cuhk.edu.hk/~qdou/">Prof. Qi Dou</a> and fortunate to work with <a href="https://tianfan.info/">Prof. Tianfan Xue</a> and <a href="https://gaplab.cuhk.edu.cn/">Prof. Xiaoguang Han</a>.
+                Before that, I obtained my B.Eng. degree at ShanghaiTech University.
+                Outside of academics, my hobbies include playing the (electric) guitar, creative coding, and designing games (<a href="/showcase/">check out my showcase</a>).
             </div>
             <hr>
 
             <div class="section" id="research">
                 <heading>Research</heading>
 
-                <p class="item">
-                    My topics of interest include computer graphics, computer vision and deep learning.
-                    In particular, I work on projects in neural rendering, 3D reconstruction, and physically-based simulation for healthcare applications.
+                <p class="mt-2 text-justify">
+                    My topics of interest include computer graphics, 3D vision, computational photography, and their intersections with machine learning.
+                    In particular, I work on projects in neural rendering and 3D reconstruction.
                     <br><b>(Note: * indicates equal contribution.)</b>
                 </p>
 
-                <div class="row item">
+                <div class="row item over-video">
                     <div class="col-3 thumbnail">
-                        <video width="100%" playsinline autoplay muted loop>
-                            <source src="/images/paper_thumbnail/recolornerf.mp4" type="video/mp4" />
-                        </video>
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/seamlessnerf.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/seamlessnerf.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle style="max-width: 550px; display: block;">SeamlessNeRF: Stitching Part NeRFs with Gradient Propagation</papertitle>
+                        <span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, Qi Dou</span>
+                        <br>
+                        <span><i>SIGGRAPH Asia 2023</i></span>
+                        <br>
+                        <span>
+                            We present a gradient-domain approach for seamless appearance blending of part NeRFs, drawing inspiration from Poisson image editing.
+                            <br>
+                            [<a href="/downloads/papers/SeamlessNeRF_preprint.pdf">Pdf</a>] [<a href="https://www.youtube.com/watch?v=AGma1AfAkDk">Video</a>] [<a href="https://sites.google.com/view/seamlessnerf">Webpage</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row item over-video">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/recolornerf.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/recolornerf.png" />
                     </div>
                     <div class="col-9 abstract">
                         <papertitle style="max-width: 550px; display: block;">RecolorNeRF: Layer Decomposed Radiance Fields for Efficient Color Editing of 3D Scenes</papertitle>
-                        <span>Bingchen Gong*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="http://www.cse.cuhk.edu.hk/~qdou">Qi Dou</a></span>
+                        <span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, Qi Dou</span>
                         <br>
-                        <span>arXiv:2301.07958</span>
+                        <span><i>ACM MM 2023</i></span>
                         <br>
                         <span>
-                            We propose a novel user-friendly color editing approach for neural radiance fields.
+                            A palette-based NeRF recoloring approach with a fully learnable palette.
                             <br>
                             [<a href="https://arxiv.org/pdf/2301.07958.pdf">Pdf</a>] [<a href="https://arxiv.org/abs/2301.07958">arXiv</a>] [<a href="https://github.com/yuehaowang/RecolorNeRF/">Code</a>] [<a href="https://sites.google.com/view/recolornerf">Webpage</a>]
                         </span>
                     </div>
                 </div>
-
-                <div class="row item highlight">
+<!-- 
+                <div class="row item over-video">
                     <div class="col-3 thumbnail">
-                        <video width="100%" playsinline autoplay muted loop>
-                            <source src="/images/paper_thumbnail/nerf_surgery.mp4" type="video/mp4" />
-                        </video>
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/fastendonerfsim.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/fastendonerfsim.png" />
                     </div>
                     <div class="col-9 abstract">
-                        <papertitle style="max-width: 550px; display: block;">Neural Rendering for Stereo 3D Reconstruction of Deformable Tissues in Robotic Surgery</papertitle>
-                        <span><u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, Siu Hin Fan, <a href="http://www.cse.cuhk.edu.hk/~qdou">Qi Dou</a></span>
+                        <papertitle style="max-width: 550px; display: block;">Efficient EndoNeRF Reconstruction and Its Application for Data-driven Surgical Simulation</papertitle>
+                        <span><u>Yuehao Wang</u>, <a href="https://s2.hk/">Bingchen Gong</a>, <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, Siu Hin Fan, Qi Dou</span>
                         <br>
-                        <span>Early accepted by <i>MICCAI 2022</i> <b style="color: red;">(Oral, Young Scientist Award)</b></span>
+                        <span><i>Under Review</i></span>
+                        <br>
+                        <span>
+                            We enable EndoNeRF to efficiently reconstruct surgical scenes for soft-body simulations.
+                            <br>
+                            [<a href="#">Pdf</a>] [<a href="#">arXiv</a>] [<a href="https://github.com/med-air/FastEndoNeRF-Sim">Code</a>]
+                        </span>
+                    </div>
+                </div> -->
+
+                <div class="row item over-video">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/lerplane.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/lerplane.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle style="max-width: 550px; display: block;">Neural LerPlane Representations for Fast 4D Reconstruction of Deformable Tissues</papertitle>
+                        <span><a href="https://scholar.google.com.hk/citations?user=StdXTR8AAAAJ">Chen Yang</a>, Kailing Wang, <u>Yuehao Wang</u>, <a href="https://scholar.google.com.hk/citations?user=yDEavdMAAAAJ">Xiaokang Yang</a>, <a href="https://shenwei1231.github.io/">Wei Shen</a></span>
+                        <br>
+                        <span><i>MICCAI 2023</i> <b style="color: red;">(Oral Presentation)</b></span>
+                        <br>
+                        <span>
+                            LerPlane accelerates deformable surgical scene reconstruction to achieve x100 faster.
+                            <br>
+                            [<a href="https://arxiv.org/pdf/2305.19906.pdf">Pdf</a>] [<a href="https://arxiv.org/abs/2305.19906">arXiv</a>] [<a href="https://github.com/Loping151/ForPlane">Code</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row item over-video">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/surrolv2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/surrolv2.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle style="display: block;">Human-in-the-loop Embodied Intelligence with Interactive Simulation Environment for Surgical Robot Learning</papertitle>
+                        <span><a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, Wang Wei, <a href="https://scholar.google.com/citations?user=9jRIXGsAAAAJ">Tao Huang</a>, <u>Yuehao Wang</u>, Qi Dou</span>
+                        <br>
+                        <span><i>IEEE RA-L 2023</i></span>
+                        <br>
+                        <span>
+                            An interactive simulation platform for surgical robot learning via human demonstrations.
+                            <br>
+                            [<a href="https://arxiv.org/pdf/2301.00452.pdf">Pdf</a>] [<a href="https://arxiv.org/abs/2301.00452">arXiv</a>] [<a href="https://med-air.github.io/SurRoL/">Webpage</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row item highlight over-video">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/nerf_surgery.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/endonerf.png" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle style="max-width: 550px; display: block;">EndoNeRF: Neural Rendering for Stereo 3D Reconstruction of Deformable Tissues in Robotic Surgery</papertitle>
+                        <span><u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, Siu Hin Fan, Qi Dou</span>
+                        <br>
+                        <span><i>MICCAI 2022</i> <b style="color: red;">(Oral Presentation, Student Travel Award, Young Scientist Award)</b></span>
                         <br>
                         <span>
                             We propose a neural rendering framework for reconstructing deformable tissues from stereo endoscopic images captured in robotic surgery.
@@ -105,11 +202,11 @@
                         <img width="100%" src="/images/paper_thumbnail/sogcn.png" />
                     </div>
                     <div class="col-9 abstract">
-                        <papertitle>SoGCN: Second-Order Graph Convolutional Networks</papertitle>
+                        <papertitle class="mt-lg-3">SoGCN: Second-Order Graph Convolutional Networks</papertitle>
                         <span><a href="http://peihaowang.github.io">Peihao Wang</a>*, <u>Yuehao Wang</u>*, <a href="http://linhuavvv.com/">Hua Lin</a>, <a href="https://www.cis.upenn.edu/~jshi/">Jianbo Shi</a></span>
                         <br>
-                        <span>arXiv:2110.07141</span>
-                        <br><br>
+                        <span><i>arXiv preprint 2021</i></span>
+                        <br>
                         <span>
                             We show that multi-layer second-order graph convolution (SoGC) is sufficient to attain the ability of expressing polynomial spectral filters with arbitrary coefficients.
                             <br>
@@ -126,7 +223,7 @@
                         <papertitle>Multi-View Neural Human Rendering</papertitle>
                         <span><a href="http://wuminye.com">Minye Wu</a>, <u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=kYHf73IAAAAJ">Qiang Hu</a>, <a href="http://www.yu-jingyi.com/">Jingyi Yu</a></span>
                         <br>
-                        <span>Accepted by <i>CVPR 2020</i></span>
+                        <span><i>CVPR 2020</i></span>
                         <br>
                         <span>
                             We present an end-to-end Neural Human Renderer (NHR) for dynamic human captures under the multi-view setting.
@@ -139,7 +236,7 @@
 
             <div class="section" id="other_projects">
                 <heading>Other Projects</heading>
-
+                
                 <div class="row item">
                     <div class="col-3 thumbnail">
                         <img width="100%" src="/images/demo/volrend_flame.png" />
@@ -165,119 +262,80 @@
                         <papertitle>Let's CG <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/lets_cg" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/lets_cg on GitHub">Star</a></span></papertitle>
                         <br>
                         <span>
-                            A collection of essential algorithms and applications for rendering and geometry processing in the area of computer graphics, including OpenGL, global illumination, volume rendering,
+                            A collection of essential algorithms and applications for rendering and geometry processing, including OpenGL, global illumination, volume rendering,
                             Loop subdivision, convex hull, etc.
-                            <br>
+                            <br><br>
                             [<a href="https://github.com/yuehaowang/lets_CG">Github</a>]
                             [<a href="https://github.com/yuehaowang/lets_CG/tree/v1.0">Legacy Version</a>]
                         </span>
                     </div>
                 </div>
-
-                <!-- <div class="row item">
-                    <div class="col-3 thumbnail">
-                        <img width="100%" src="/images/demo/pylash_tower_defense_sq.png" />
-                    </div>
-                    <div class="col-9 abstract">
-                        <papertitle>Pylash <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/pylash_engine" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/pylash_engine on GitHub">Star</a></span></papertitle>
-                        <br><br>
-                        <span>
-                            A Python 2D game framework, created when I was a high school student, with a series of common modules implemented, such as 2D graphics, event systems, media systems, tween animation, collision detection, etc.
-                            <br>
-                            [<a href="https://github.com/yuehaowang/pylash_engine">Github</a>] [<a href="https://pypi.org/project/pylash-engine/">PyPI</a>]
-                        </span>
-                    </div>
-                </div> -->
-
-                <!-- <div class="row item">
-                    <div class="col-3 thumbnail">
-                        <img width="100%" src="/images/demo/greeting_card3.png" />
-                    </div>
-                    <div class="col-9 abstract">
-                        <papertitle>Greeting Card <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/greeting_card" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/greeting_card on GitHub">Star</a></span></papertitle>
-                        <br>
-                        <span>
-                            Greeting Card provides an interactive animation to show your message brick by brick. Your receivers just need to tap the screen until they understand what you want to express.
-                            <br>
-                            [<a href="https://github.com/yuehaowang/greeting_card">Github</a>] [<a href="/demo/greeting_card/">Demo</a>]
-                        </span>
-                    </div>
-                </div> -->
             </div>
 
             <div class="section" id="teaching">
-                <heading>Teaching & Service</heading>
+                <heading>Teaching</heading>
 
-                <!-- <div class="item" style="padding-left: 5px;">
-                    <b>CUHK</b>
-                    <div style="padding-top: 10px; padding-left: 10px;">
+                <div class="mt-3" style="padding-left: 5px;">
+                    <div style="padding-left: 10px;">
                         <ul>
-                            <li>CSCI4190 Introduction to Social Networks - Spring 2022 (TA)</li>
-                            <li>CSCI3230 Fundamentals of Artificial Intelligence - Fall 2021, Fall 2022 (TA)</li>
+                            <li>Multimedia Coding and Processing - Fall 2023 @ CUHK (TA)</li>
+                            <li>Fundamentals of Artificial Intelligence - Fall 2021, Fall 2022 @ CUHK (TA)</li>
+                            <li>Introduction to Social Networks - Spring 2022 @ CUHK (TA)</li>
+                            <li>Computer Graphics - Spring 2021 @ ShanghaiTech (TA)</li>
+                            <li>Linear Algebra - Fall 2019, Fall 2020 @ ShanghaiTech (TA)</li>
+                            <li>Introduction to Computer Programming - Fall 2018 @ ShanghaiTech (TA)</li>
                         </ul>
                     </div>
-                </div> -->
+                </div>
+            </div>
 
-                <div class="item" style="padding-left: 5px;">
-                    <!-- <b>Teaching</b> -->
-                    <div style="padding-top: 10px; padding-left: 10px;">
+            <div class="section" id="talks">
+                <heading>Talks & Presentations</heading>
+
+                <div class="mt-3" style="padding-left: 5px;">
+                    <div style="padding-left: 10px;">
                         <ul>
                             <li>Invited talk at Olympus ATR: <i>"3D Reconstruction of Deformable Soft Tissues via NeRF"</i>, Mar 2023.</li>
                             <li>Invited speaker at TUM: <i><a href="https://www.cs.cit.tum.de/camp/news/article/camp-learning-day-nerf-meets-medical-imaging/" target="_blank">"CAMP Learning Day: NeRF meets Medical Imaging"</a></i>, Sep 2022.</li>
                         </ul>
                     </div>
-                    <div style="padding-top: 10px; padding-left: 10px;">
-                        <ul>
-                            <li>CSCI3230 Fundamentals of Artificial Intelligence - Fall 2021, Fall 2022 @ CUHK (TA)</li>
-                            <li>CSCI4190 Introduction to Social Networks - Spring 2022 @ CUHK (TA)</li>
-                            <li>CS171 Computer Graphics - Spring 2021 @ ShanghaiTech (TA)</li>
-                            <li>MATH1112 Linear Algebra - Fall 2019, Fall 2020 @ ShanghaiTech (TA)</li>
-                            <!-- <li><a href="http://www.utechacademy.cn/" target="_blank">UTech Academy AI Camp</a> - Summer 2020 (TA of Data Science)</li> -->
-                            <li>SI100 Introduction to Computer Programming - Fall 2018 @ ShanghaiTech (TA)</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             
-            <!-- <div class="section" id="collaborators">
-                <heading>Student Collaborators</heading>
-
-                <p class="item">
-                    I have worked with many excellent collaborators during my academic journey.
-                    I would like to express my gratitude to them for their efforts devoted to our jobs.
-                </p>
-
-                <div class="row item">
-                    <div class="col-6">
-                        <ul>
-                            <li><a href="https://peihaowang.github.io">Peihao Wang</a> (PhD @ UT Austin)</li>
-                            <li><a href="https://dzhange.github.io">Ge Zhang</a> (MS @ UMich)</li>
-                            <li><a href="http://wuminye.com">Minye Wu</a> (Postdoc @ KU Leuven)</li>
-                            <li><a href="http://linhuavvv.com">Hua Lin</a> (MS @ CAS)</li>
-                            <li>Chenqi Luo (MS @ ShanghaiTech)</li>
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <ul>
-                            <li>Rui Wang (MS @ Tokyo Tech)</li>
-                            <li><a href="https://www.linkedin.com/in/philipxyc/">Yincen Xia</a> (SE @ Tesla)</li>
-                            <li>Guangyuan Weng (PhD @ Northeastern)</li>
-                            <li>Qixuan Zhang (Co-Founder of <a href="https://www.deemos.com/">DEEMOS Inc</a>)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
             <div style="margin-top: 50px;"><hr></div>
 
             <footer class="text-end">
                 <a style="padding-right: 5px;" href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?yuehaowang"border="0" alt="Free Hit Counters"></a> unique visitors since Jul 2021.<br>
-                &copy; 2023 Yuehao Wang. Last update: Apr 08, 2023.<br>
-                <!-- The design of this website is inspired by <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://richzhang.github.io/">Richard Zhang</a>. -->
+                &copy; 2023 Yuehao Wang. Last update: Oct 19, 2023.<br>
+                <p style="font-size: small;">
+                    This webpage's design is from <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://richzhang.github.io/">Richard Zhang</a>.
+                </p>
             </footer>
         </main>
     </div>
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script>
+        function main() {
+            overlay_video();
+        }
+        function overlay_video() {
+            var nodes = document.querySelectorAll('.over-video');
+            for(var i = 0; i < nodes.length; i++) {
+                node = nodes[i]
+                node.addEventListener('mouseenter', function(event) {
+                    this.querySelector('.overlay-video').style.opacity = 1;
+                    this.querySelector('video').currentTime = 0;
+                    this.querySelector('video').play();
+                });
+                node.addEventListener('mouseleave', function(event) {
+                    this.querySelector('.overlay-video').style.opacity = 0;
+                    this.querySelector('video').pause();
+                });
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() { main(); }, true);
+    </script>
   </body>
 </html>
