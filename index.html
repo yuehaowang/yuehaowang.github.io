@@ -56,10 +56,22 @@
                 <p class="mt-2 text-justify">
                     My topics of interest include computer graphics, 3D vision, computational photography, and their intersections with machine learning.
                     In particular, I work on projects in neural rendering and 3D reconstruction.
-                    <br><b>(Note: * indicates equal contribution.)</b>
+                    <br><i>(Note: * indicates authors with equal contribution.)</i>
                 </p>
 
-                <div class="row item over-video">
+                <ul class="nav nav-tabs" id="pubtabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="selected" type="button" role="tab" aria-selected="true">Selected</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="pub" type="button" role="tab" aria-selected="false">Full List</a>
+                    </li>
+                    <!-- <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="preprint" type="button" role="tab" aria-selected="false">Preprints</a>
+                    </li> -->
+                </ul>
+
+                <div class="row item over-video selected pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -82,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="row item over-video">
+                <div class="row item over-video selected pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -104,8 +116,8 @@
                         </span>
                     </div>
                 </div>
-                <!-- 
-                <div class="row item over-video">
+                
+                <!-- <div class="row item over-video preprint pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -128,7 +140,7 @@
                     </div>
                 </div> -->
 
-                <div class="row item over-video">
+                <div class="row item over-video pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -151,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="row item over-video">
+                <div class="row item over-video pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -174,7 +186,7 @@
                     </div>
                 </div>
 
-                <div class="row item highlight over-video">
+                <div class="row item over-video selected pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -197,7 +209,7 @@
                     </div>
                 </div>
 
-                <div class="row item">
+                <div class="row item preprint pub">
                     <div class="col-3 thumbnail">
                         <img width="100%" src="/images/paper_thumbnail/sogcn.png" />
                     </div>
@@ -215,7 +227,7 @@
                     </div>
                 </div>
 
-                <div class="row item">
+                <div class="row item selected pub">
                     <div class="col-3 thumbnail">
                         <img width="100%" src="/images/paper_thumbnail/nhr.jpg" />
                     </div>
@@ -296,7 +308,7 @@
                     <div style="padding-left: 10px;">
                         <ul>
                             <li>Invited talk at Olympus ATR: <i>"3D Reconstruction of Deformable Soft Tissues via NeRF"</i>, Mar 2023.</li>
-                            <li>Invited speaker at TUM: <i><a href="https://www.cs.cit.tum.de/camp/news/article/camp-learning-day-nerf-meets-medical-imaging/" target="_blank">"CAMP Learning Day: NeRF meets Medical Imaging"</a></i>, Sep 2022.</li>
+                            <li>Invited speaker at TUM: <i><a href="https://www.cs.cit.tum.de/camp/news/article/camp-learning-day-nerf-meets-medical-imaging/" target="_blank">"CAMP Learning Day: NeRF meets Medical Imaging"</a></i>, Oct 2022.</li>
                         </ul>
                     </div>
                 </div>
@@ -305,7 +317,7 @@
             <div style="margin-top: 50px;"><hr></div>
 
             <footer class="text-end">
-                <a style="padding-right: 5px;" href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?yuehaowang"border="0" alt="Free Hit Counters"></a> unique visitors since Jul 2021.<br>
+                <a style="padding-right: 5px;" href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?yuehaowang" border="0" alt="Free Hit Counters"></a> unique visitors since Jul 2021.<br>
                 &copy; 2023 Yuehao Wang. Last update: Nov 29, 2023.<br>
                 <p style="font-size: small;">
                     The website template is adapted from <a href="https://jonbarron.info/">[1]</a> and <a href="https://richzhang.github.io/">[2]</a>.
@@ -319,6 +331,8 @@
     <script>
         function main() {
             overlay_video();
+            pub_tabs();
+            show_pub_by_classname('selected');
         }
         function overlay_video() {
             var nodes = document.querySelectorAll('.over-video');
@@ -334,6 +348,27 @@
                     this.querySelector('video').pause();
                 });
             }
+        }
+        function show_pub_by_classname(clsname) {
+            // classnames: pub, selected, preprints
+            const pub_entries = document.getElementsByClassName('pub');
+            for (var i = 0; i < pub_entries.length; i++) {
+                pub_el = pub_entries[i]
+                if (pub_el.classList.contains(clsname)) {
+                    pub_el.style.display = 'flex';
+                } else {
+                    pub_el.style.display = 'none';
+                }
+            }
+        }
+        function pub_tabs() {
+            const triggerTabList = document.querySelectorAll('#pubtabs a');
+            triggerTabList.forEach(triggerEl => {
+                triggerEl.addEventListener('click', event => {
+                    event.preventDefault();
+                    show_pub_by_classname(triggerEl.dataset.bsTarget);
+                });
+            });
         }
         document.addEventListener('DOMContentLoaded', function() { main(); }, true);
     </script>
