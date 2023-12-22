@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="/stylesheets.css" rel="stylesheet" >
     <title>Yuehao's Showcase</title>
+
+    <style>
+        .bg-image {
+            position: relative;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -87,7 +97,7 @@
                     I draw profound inspiration from legendary guitarists like Jimmy Page, Slash, Eric Clapton, and Stevie Ray Vaughan, to name just a few.
                 </p>
 
-                <div>
+                <div class="p-3 pt-0">
                     <div class="row item">
                         <div class="col-lg-4 p-0">
                             <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/4aiXs9Kh1x8?si=Ul92_zzVpYbIYdph&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -121,7 +131,7 @@
             </div>
 
             <div class="section" id="art_music">
-                <heading>Recent Photos 📷</heading>
+                <heading>Photo Gallery 📷</heading>
 
                 <p class="mt-2">
                     Besides rendering and processing pixels in my research, I also record pleasant moments in pixels.
@@ -130,35 +140,89 @@
                 <div class="row">
                     <div class="col-4">
                         <a href="/images/gallery/tolo_bay.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/tolo_bay.jpg" class="img-fluid">
-                        </a>
-                        <a href="/images/gallery/usydney_1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/usydney_1.jpg" class="img-fluid mt-2">
+                            <div class="bg-image">
+                                <img src="/images/gallery/tolo_bay.jpg" class="img-fluid">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">Tolo Harbour, HK</p>
+                                </div>
+                            </div>
                         </a>
                         <a href="/images/gallery/cuhk_2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/cuhk_2.jpg" class="img-fluid mt-2">
+                            <div class="bg-image">
+                                <img src="/images/gallery/cuhk_2.jpg" class="img-fluid mt-3">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">Wu Ho Man Yuen Bldg., CUHK</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/images/gallery/operahouse.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <div class="bg-image">
+                                <img src="/images/gallery/operahouse.jpg" class="img-fluid mt-3">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">Sydney Opera House</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
                     <div class="col-4 p-0">
-                        <a href="/images/gallery/cuhk_1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/cuhk_1.jpg" class="img-fluid">
+                        <a href="/images/gallery/NgongPing.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <div class="bg-image">
+                                <img src="/images/gallery/NgongPing.jpg" class="img-fluid">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">Ngong Ping, HK</p>
+                                </div>
+                            </div>
                         </a>
-                        <a href="/images/gallery/usydney_2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/usydney_2.jpg" class="img-fluid mt-2">
+                        <a href="/images/gallery/usydney_1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <div class="bg-image">
+                                <img src="/images/gallery/usydney_1.jpg" class="img-fluid mt-2">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">The University of Sydney</p>
+                                </div>
+                            </div>
                         </a>
-                        <a href="/images/gallery/boat.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/boat.jpg" class="img-fluid mt-2">
-                        </a>
+                        <!-- <a href="/images/gallery/shatinsunset.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <div class="bg-image">
+                                <img src="/images/gallery/shatinsunset.jpg" class="img-fluid mt-4">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">Regal Riverside Hotel, HK</p>
+                                </div>
+                            </div>
+                        </a> -->
                     </div>
                     <div class="col-4">
-                        <a href="/images/gallery/NgongPing.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/NgongPing.jpg" class="img-fluid">
+                        <a href="/images/gallery/cuhk_1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <div class="bg-image">
+                                <img src="/images/gallery/cuhk_1.jpg" class="img-fluid">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">S.H. Ho College, CUHK</p>
+                                </div>
+                            </div>
                         </a>
-                        <a href="/images/gallery/operahouse.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/operahouse.jpg" class="img-fluid mt-2">
+                        <a href="/images/gallery/usydney_2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <div class="bg-image">
+                                <img src="/images/gallery/usydney_2.jpg" class="img-fluid mt-3">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">The University of Sydney</p>
+                                </div>
+                            </div>
                         </a>
-                        <a href="/images/gallery/shatinsunset.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="/images/gallery/shatinsunset.jpg" class="img-fluid mt-2">
+                        <a href="/images/gallery/boat.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                            <div class="bg-image">
+                                <img src="/images/gallery/boat.jpg" class="img-fluid mt-3">
+                                <div class="position-absolute bottom-0 text-light w-100"
+                                    style="background-color: rgba(0, 0, 0, 0.5)">
+                                    <p class="p-2 m-0">Sentosa, Singapore</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
