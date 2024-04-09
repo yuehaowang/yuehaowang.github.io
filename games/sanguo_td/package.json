@@ -1,0 +1,14 @@
+{
+	"main": "startup.js",
+	"name": "SanguoTD",
+	"description": "This is a game that is similar to a tower defence game. There are 15 levels in this game. Players' task in this game is to play different Sanguo characters and call other our-side characters to fight against enemies.",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "electron ."
+	},
+	"license": "GNU GPL",
+	"devDependencies": {
+		"electron": "^4.0.2"
+	},
+	"dependencies": {}
+}

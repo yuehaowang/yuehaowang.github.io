@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>H5 Eps Maker</title>
+	<style type="text/css">
+		#mycanvas {
+			border: 2px solid #333333;
+		}
+
+		#footer {
+			margin-top: 20px;
+			padding: 20px;
+			border-top: 1px dashed #AAAAAA;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function () {
+			var canvasObj = document.getElementById("mycanvas");
+			var ctx = canvasObj.getContext("2d");
+			var imgLoaded = false;
+
+			ctx.save();
+			ctx.font = "15px Arial";
+			ctx.fillText("First, choose a image.", 30, 40);
+			ctx.fillText("Then, click 'Export eps' button to get the output.", 30, 70);
+			ctx.restore();
+
+			if (window.File && window.FileReader && window.FileList && window.Blob) {
+				document.getElementById("image-file-select").addEventListener("change", function (e) {
+					var file = e.target.files[0];
+
+					if (!file) {
+						return;
+					}
+
+					if (!file.type.match("image.*")) {
+						alert("Please choose a IMAGE file.");
+
+						return;
+					}
+
+					var reader = new FileReader();
+					reader.readAsDataURL(file);
+					reader.onload = function (e) {
+						var img = new Image();
+						img.addEventListener("load", function () {
+							ctx.clearRect(0, 0, canvasObj.width, canvasObj.width);
+
+							canvasObj.width = img.width;
+							canvasObj.height = img.height;
+
+							ctx.drawImage(img, 0, 0);
+
+							imgLoaded = true;
+						});
+						img.src = e.target.result;
+					};
+					reader.onerror = function () {
+						alert("Aww...Error occured...");
+					};
+				});
+			} else {
+				alert("Your browser doesn't support HTML5 File API.")
+			}
+
+			document.getElementById("export-btn").onclick = function () {
+				/**
+				 * Get and check input content.
+				 */
+				if (!imgLoaded) {
+					alert("Image has not been loaded yet!");
+
+					return;
+				}
+
+				var pointSize = parseInt(document.getElementById("point-size-input").value);
+				if (isNaN(pointSize)) {
+					alert("Incorrect point size.");
+
+					return;
+				}
+
+				var selectedShape = parseInt(document.getElementById("pt-shape-select").value);
+
+
+				/**
+				 * Common variables.
+				 */
+				var w = canvasObj.width, h = canvasObj.height;
+				var imgData = ctx.getImageData(0, 0, w, h),
+					dataArr = imgData.data,
+					rows = Math.floor(h / pointSize),
+					cols = Math.floor(w / pointSize);
+
+
+				/**
+				 * Utils.
+				 */
+				function getPx (x, y) {
+					var start = (y * w + x) * 4;
+
+					return [dataArr[start], dataArr[start + 1], dataArr[start + 2], dataArr[start + 3]];
+				}
+
+				function getPt (x, y) {
+					var color = [0, 0, 0], pxAmount = pointSize * pointSize;
+
+					for (var ir = 0; ir < pointSize; ir++) {
+						for (var ic = 0; ic < pointSize; ic++) {
+							var px = getPx(x * pointSize + ic, y * pointSize + ir);
+
+							color[0] += px[0];
+							color[1] += px[1];
+							color[2] += px[2];
+						}
+					}
+
+					return [color[0] / pxAmount, color[1] / pxAmount, color[2] / pxAmount];
+				}
+
+				function fmt (s1, t) {
+					var replaceNum = 0;
+
+					while (s1.indexOf("%s") >= 0) {
+						var p = s1.indexOf("%s");
+
+						s1 = s1.slice(0, p) + t[replaceNum++] + s1.slice(p + 2);
+					}
+
+					return s1;
+				}
+
+				function generatePolygon (x, y, r, n) {
+					var da = (360 / n) * Math.PI / 180;
+					var res = new Array();
+
+					for (var i = 0; i < n; i++) {
+						var tempAngle = i * da;
+						res.push([x + r * Math.cos(tempAngle), y + r * Math.sin(tempAngle)]);
+					}
+
+					return res;
+				}
+
+				function generatePathOutput (pointLs) {
+					var res = "";
+
+					res += fmt("\n%s %s moveto", pointLs[0]);
+
+					for (var i = 1, l = pointLs.length; i < l; i++) {
+						res += fmt("\n%s %s lineto", pointLs[i]);
+					}
+
+					res += fmt("\n%s %s lineto", pointLs[0]);
+
+					return res;
+				}
+
+
+				/**
+				 * Get point list.
+				 */
+				var ptLs = (function () {
+					var res = new Array();
+
+					for (var r = 0; r < rows; r++) {
+						var rLs = new Array();
+
+						for (var c = 0; c < cols; c++) {
+							rLs.push(getPt(c, r));
+						}
+
+						res.push(rLs);
+					}
+
+					return res;
+				})();
+
+				/**
+				 * Output
+				 */
+				var output = fmt("%!PS-Adobe-3.0 EPSF-3.0\n%%BoundingBox: 0 0 %s %s", [w, h]);
+
+				for (var i = 0, m = ptLs.length; i < m; i++) {
+					var tempRow = ptLs[i];
+
+					for (var j = 0, n = tempRow.length; j < n; j++) {
+						var px = tempRow[j];
+						var r = (px[0] / 255) || 0,
+							g = (px[1] / 255) || 0,
+							b = (px[2] / 255) || 0;
+						
+						var x = j * pointSize,
+							y = h - i * pointSize;
+
+
+						output += fmt("\n%s %s %s setrgbcolor", [r, g, b]);
+
+						if (selectedShape == "0") {
+							output += generatePathOutput([[x, y], [x - pointSize, y], [x - pointSize, y - pointSize], [x, y - pointSize]]);
+						} else if (selectedShape == "1") {
+							var radius = pointSize / 2;
+							output += fmt("\n%s %s %s %s %s arc", [x - radius, y - radius, radius, 0, 360]);
+						} else if (selectedShape == "2") {
+							var radius = pointSize / 2
+							output += generatePathOutput(generatePolygon(x - radius, y - radius, radius, 6));
+						}
+						
+						output += fmt("\nfill");
+					}
+				}
+
+				document.getElementById("res-textbox").value = output;
+			};
+		};
+	</script>
+</head>
+<body>
+
+<canvas id="mycanvas" width="400" height="100"></canvas>
+<br /><br />
+
+<div>
+	<input type="file" id="image-file-select">
+	<br /><br />
+	<input type="text" id="point-size-input" value="5">
+	<select id="pt-shape-select">
+		<option value="0" selected="selected">Rect</option>
+		<option value="1">Circle</option>
+		<option value="2">Hexagon</option>
+	</select>
+	<button id="export-btn">Export eps</button>
+</div>
+<br /><br />
+
+<div>
+	<b>Output:</b>
+	<br /><br />
+	<textarea rows="30" cols="70" id="res-textbox"></textarea>
+
+	<br /><br />
+	<b>Notice:</b>
+	<ul>
+		<li><b>* Copy the content to your '.eps' file and view it in your PostScript viewer (e.g. <i>Preview</i> on macOS, <i>gv</i> on Linux).</b></li>
+		<li><b>* Avoid using this tool to generate your avatar for Homework 4, if the action is NOT allowed.</b></li>
+	</ul>
+</div>
+
+<div id="footer">
+	&copy; Copyright <a href="https://github.com/yuehaowang" target="_blank">Yuehao Wang</a> from ShanghaiTech University.
+	<br />Comments are welcome. Email: wangyh3@shanghaitech.edu.cn
+</div>
+
+</body>
+</html>

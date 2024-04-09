@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>box2d demo</title>
+	<script type="text/javascript" src="./Box2dWeb-2.1.a.3.min.js"></script>
+	<script type="text/javascript" src="./lufylegend-1.8.7.min.js"></script>
+	
+	<script type="text/javascript">
+		init(50,"mylegend",600,400,pageInit);
+		function pageInit(){
+			LStage.setDebug(true);
+			LStage.box2d = new LBox2d();
+
+			if(LStage.canTouch == true){
+				document.body.style.margin = "0px 0px";
+				LStage.stageScale = LStageScaleMode.SHOW_ALL;
+				LSystem.screen(LStage.FULL_SCREEN);
+			}
+
+			var mainObj = new Main();
+			addChild(mainObj);
+		}
+
+		/**
+		 *Main
+		*/
+		function Main(){
+			var s = this;
+			base(s,LSprite,[]);
+
+			/**加入围墙*/
+			s.addWall();
+			/**加入锁链桥*/
+			s.addBridge();
+			/**随机加入其他物体*/
+			s.addRandomObj();
+		}
+		Main.prototype.addWall = function(){
+			var s = this;
+			
+			//设置围墙大小
+			var wallSize = 10;
+			//设置围墙数据
+			var wallList = [
+				//左边
+				[wallSize*0.5, LStage.height*0.5, wallSize, LStage.height],
+				//右边
+				[LStage.width-wallSize*0.5, LStage.height*0.5, wallSize, LStage.height],
+				//上面
+				[LStage.width*0.5, wallSize*0.5, LStage.width, wallSize],				
+				//下面
+				[LStage.width*0.5, LStage.height-wallSize*0.5, LStage.width, wallSize],
+			];
+			//通过遍历围墙数据，添加四面围墙
+			for(var key in wallList){
+				//获取数据
+				var item = wallList[key];
+				//创建围墙对象
+				var wallLayer = new LSprite();
+				//设定对象位置
+				wallLayer.x = item[0];
+				wallLayer.y = item[1];
+				//加入刚体
+				wallLayer.addBodyPolygon(item[2],item[3],0);
+				//加入显示列表
+				s.addChild(wallLayer);
+			}
+		};
+		Main.prototype.addBridge = function(){
+			var s = this;
+
+			//关节向量
+			var vec = new LStage.box2d.b2Vec2();
+			//添加对象数量
+			var amount = 6;
+			//设置对象宽度和高度
+			var bw=50,bh=15;
+			//获取锁链桥总长度
+			var bridgeWidth = bw*amount;
+			//设置锁链桥开始位置
+			var initX=(LStage.width-bridgeWidth)*0.5,
+				initY=(LStage.height-bh)*0.5+30;
+			//设置用于固定锁链桥的定点半径
+			var anchorR = 15;
+
+			/**用于固定锁链桥的定点A*/
+			var anchorA = new LSprite();
+			anchorA.x = initX-anchorR;
+			anchorA.y = initY-anchorR;
+			anchorA.addBodyCircle(anchorR,anchorR,anchorR,0);
+			s.addChild(anchorA);
+			/**用于固定锁链桥的定点B*/
+			var anchorB = new LSprite();
+			anchorB.x = bridgeWidth+initX-anchorR;
+			anchorB.y = initY-anchorR;
+			anchorB.addBodyCircle(anchorR,anchorR,anchorR,0);
+			s.addChild(anchorB);
+
+			//上一个对象
+			var previousBlock = anchorA;
+
+			/**循环添加刚体*/
+			for(var i=0; i<amount; i++){
+				//实例化对象
+				var block = new LSprite();
+				//设定对象位置
+				block.x = initX+i*bw+bw*0.5;
+				block.y = initY;
+				//加入刚体
+				block.addBodyPolygon(bw,bh,1);
+				//设置鼠标拖动
+				block.setBodyMouseJoint(true);
+				//加入显示列表
+				s.addChild(block);
+				//加入关节
+				var revoluteJoint = new LStage.box2d.b2RevoluteJointDef();
+				vec.Set((initX+i*bw)/30, initY/30);
+				revoluteJoint.Initialize(previousBlock.box2dBody,block.box2dBody,vec);
+				LStage.box2d.world.CreateJoint(revoluteJoint);
+				//更改上一个对象
+				previousBlock = block;
+			}
+			//将最后一个刚体固定
+			var revoluteJoint = new LStage.box2d.b2RevoluteJointDef();
+			vec.Set((initX+i*bw)/30, initY/30);
+			revoluteJoint.Initialize(previousBlock.box2dBody,anchorB.box2dBody,vec);
+			LStage.box2d.world.CreateJoint(revoluteJoint);
+		};
+		Main.prototype.addRandomObj = function(){
+			var s = this;
+			for(var i=0; i<10; i++){
+				//创建对象
+				var obj = new LSprite();
+				//设置对象位置
+				obj.x = Math.floor(Math.random()*(400-200+1)+200);
+				obj.y = 0;
+				//加入显示列表
+				s.addChild(obj);
+				//根据随机数添加不同的刚体
+				if(Math.random() > 0.5){
+					//获取随机宽度和高度
+					var w = Math.floor(Math.random()*10)+25;
+					var h = Math.floor(Math.random()*10)+25;
+					//重现设置y坐标
+					obj.y += h*0.5;
+					//添加矩形刚体
+					obj.addBodyPolygon(w,h,1);
+				}else{
+					//获取随机半径
+					var r = Math.floor(Math.random()*20)+5;
+					//重现设置y坐标
+					obj.y += r;
+					//添加圆形刚体
+					obj.addBodyCircle(r,r,r,1);
+				}
+				//设置鼠标拖动
+				obj.setBodyMouseJoint(true);
+			}
+		};
+	</script>
+</head>
+<body>
+	<div id="mylegend"></div>
+</body>
+</html>

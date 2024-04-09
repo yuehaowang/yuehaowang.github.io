@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>box2d demo</title>
+	<script type="text/javascript" src="./lib/Box2dWeb-2.1.a.3.min.js"></script>
+	<script type="text/javascript" src="./lib/lufylegend-1.8.7.min.js"></script>
+	
+	<script type="text/javascript">
+		init(50,"mylegend",800,450,gameInit);
+		var world;
+		var JS_FILE_PATH = "./main/";
+		var LEVEL_FILE_PATH = "./data/"
+		var loadData = [
+			{path:JS_FILE_PATH+"Main.js",type:"js"},
+			{path:JS_FILE_PATH+"Road.js",type:"js"},
+			{path:JS_FILE_PATH+"BridgeGround.js",type:"js"},
+			{path:JS_FILE_PATH+"Bicycle.js",type:"js"},
+			{path:JS_FILE_PATH+"SmoothGround.js",type:"js"},
+			{path:JS_FILE_PATH+"HillGround.js",type:"js"},
+			{path:JS_FILE_PATH+"SlopeGround.js",type:"js"},
+
+			{path:LEVEL_FILE_PATH+"level01.js",type:"js"}
+		];
+		function gameInit(){
+			LStage.setDebug(true);
+			LStage.box2d = new LBox2d();
+
+			if(LStage.canTouch == true){
+				document.body.style.margin = "0px";
+				document.body.style.padding = "0px";
+				LStage.stageScale = LStageScaleMode.SHOW_ALL;
+				LSystem.screen(LStage.FULL_SCREEN);
+			}
+
+			LLoadManage.load(loadData,null,function(){
+				world = new Main();
+				addChild(world);
+				world.init();
+			});
+		}
+	</script>
+</head>
+<body>
+	<div id="mylegend"></div>
+</body>
+</html>

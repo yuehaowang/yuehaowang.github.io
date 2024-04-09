@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Spectrum - Yuehao's Lab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdn.plyr.io/3.5.6/plyr.css'>
+<link rel="stylesheet" href="/player/style.css">
+<script src="https://kit.fontawesome.com/86b9a1b1ae.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+    <div class="column add-bottom">
+        <div style="display: flex; justify-content: center; margin-bottom: 70px;">
+            <img class="album-cover" src="/images/album_covers/Spectrum.png">
+        </div>
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span id="npAction">Paused...</span><span id="npTitle"></span>
+            </div>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio!</audio>
+                </div>
+                <div id="tracks">
+                    <a id="btnPrev"><i class="fas fa-backward"></i></a>
+                    <a id="btnNext"><i class="fas fa-forward"></i></a>
+                </div>
+            </div>            
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="column add-bottom center">
+        <p>Music by Y. Wang with GarageBand</p>
+        <p>Template from <a href="https://codepen.io/markhillard/pen/Hjcwu">Mark Hillard</a></p>
+    </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.5.6/plyr.min.js'></script>
+<script src="/player/player.js"></script>
+<script>
+jQuery(function($) {
+    var tracks = [{
+        "track": 1,
+        "name": "Band Mix",
+        "duration": "1:26",
+        "file": "Band_Mix"
+    }, {
+        "track": 2,
+        "name": "Yangtze River Park",
+        "duration": "1:14",
+        "file": "Yangtze_River_Park"
+    }, {
+        "track": 3,
+        "name": "Birthday Fireworks",
+        "duration": "2:30",
+        "file": "Birthday_Fireworks"
+    }, {
+        "track": 4,
+        "name": "Balcony",
+        "duration": "1:38",
+        "file": "Balcony"
+    }, {
+        "track": 5,
+        "name": "Travelling Apollo",
+        "duration": "2:23",
+        "file": "Travelling_Apollo"
+    }, {
+        "track": 6,
+        "name": "The Way To Kowloon",
+        "duration": "1:29",
+        "file": "The_Way_to_Kowloon"
+    }];
+    createPlayer($, tracks);
+});
+</script>
+
+</body>
+</html>
