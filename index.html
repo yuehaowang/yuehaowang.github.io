@@ -49,9 +49,10 @@
 
             <hr>
             <div id="bio">
-                I am a final year M.Phil. student at The Chinese University of Hong Kong, where I am advised by Prof. Qi Dou and fortunate to work with Prof. Tianfan Xue and Prof. Xiaoguang Han.
+                I am a final year M.Phil. student at The Chinese University of Hong Kong.
                 Before that, I obtained my bachelor's degree at ShanghaiTech University.
-                Outside of academics, my hobbies include playing the (electric) guitar, creative coding, and designing games <a href="/showcase/">(check out my showcase)</a>.
+                Outside of academics, my hobbies include playing the (electric) guitar, creative coding, and designing video games
+                (check out <a href="/showcase/">my showcase</a>).
             </div>
             <hr>
 
@@ -80,6 +81,28 @@
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/bilarf.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/bilarf.jpg" />
+                    </div>
+                    <div class="col-9 abstract">
+                        <papertitle>Bilateral Guided Radiance Field Processing</papertitle>
+                        <span><u>Yuehao Wang</u>, <a href="https://github.com/1ss0dumb">Chaoyi Wang</a>, <a href="https://s2.hk/">Bingchen Gong</a>, <a href="https://tianfan.info/">Tianfan Xue</a></span>
+                        <br>
+                        <span><i>SIGGRAPH (ACM TOG), 2024</i></span>
+                        <br>
+                        <span>
+                            We introduce differentiable 2D and 3D image signal processing (ISP) pipelines to NeRF for floater-free reconstruction and human-adjusted retouching.<br>
+                            [<a href="https://arxiv.org/abs/2406.00448">Paper</a>] [<a href="https://github.com/yuehaowang/bilarf">Code</a>] [<a href="https://bilarfpro.github.io/">Webpage</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row item over-video selected pub">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
                                 <source src="/images/paper_thumbnail/seamlessnerf.mp4" type="video/mp4" />
                             </video>
                         </div>
@@ -89,12 +112,12 @@
                         <papertitle style="max-width: 550px; display: block;">SeamlessNeRF: Stitching Part NeRFs with Gradient Propagation</papertitle>
                         <span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span>
                         <br>
-                        <span><i>SIGGRAPH Asia 2023</i></span>
+                        <span><i>SIGGRAPH Asia, 2023</i></span>
                         <br>
                         <span>
                             We present a gradient-domain approach for seamless appearance blending of part NeRFs, drawing inspiration from Poisson image editing.
                             <br>
-                            [<a href="https://arxiv.org/pdf/2311.16127.pdf">Pdf</a>] [<a href="https://arxiv.org/abs/2311.16127">arXiv</a>] [<a href="https://sites.google.com/view/seamlessnerf">Webpage</a>]
+                            [<a href="https://Paper.org/abs/2311.16127">Paper</a>] [<a href="https://sites.google.com/view/seamlessnerf">Webpage</a>]
                         </span>
                     </div>
                 </div>
@@ -109,15 +132,15 @@
                         <img width="100%" src="/images/paper_thumbnail/recolornerf.png" />
                     </div>
                     <div class="col-9 abstract">
-                        <papertitle style="max-width: 550px; display: block;">RecolorNeRF: Layer Decomposed Radiance Fields for Efficient Color Editing of 3D Scenes</papertitle>
+                        <papertitle style="max-width: 530px; display: block;">RecolorNeRF: Layer Decomposed Radiance Fields for Efficient Color Editing of 3D Scenes</papertitle>
                         <span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span>
                         <br>
-                        <span><i>ACM MM 2023</i></span>
+                        <span><i>ACM MM, 2023</i></span>
                         <br>
                         <span>
-                            Edit the color of NeRF-represented scenes with fully learnable palettes.
+                            We decompose NeRF into pure-color layers for palette-based color editing of 3D scenes.
                             <br>
-                            [<a href="https://arxiv.org/pdf/2301.07958.pdf">Pdf</a>] [<a href="https://arxiv.org/abs/2301.07958">arXiv</a>] [<a href="https://github.com/yuehaowang/RecolorNeRF/">Code</a>] [<a href="https://sites.google.com/view/recolornerf">Webpage</a>]
+                            [<a href="https://Paper.org/abs/2301.07958">Paper</a>] [<a href="https://github.com/yuehaowang/RecolorNeRF/">Code</a>] [<a href="https://sites.google.com/view/recolornerf">Webpage</a>]
                         </span>
                     </div>
                 </div>
@@ -135,12 +158,12 @@
                         <papertitle style="max-width: 550px; display: block;">Neural Rendering for Stereo 3D Reconstruction of Deformable Tissues in Robotic Surgery</papertitle>
                         <span><u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, <a href="https://scholar.google.com/citations?user=YCMlfpAAAAAJ">Siu Hin Fan</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span>
                         <br>
-                        <span><i>MICCAI 2022</i> <b style="color: red;">(Oral Presentation, Student Travel Award, Young Scientist Award)</b></span>
+                        <span><i>MICCAI, 2022</i> <b style="color: red;">(Oral Presentation, Student Travel Award, Young Scientist Award)</b></span>
                         <br>
                         <span>
                             A NeRF-based method for reconstructing deformable tissues from stereo endoscopic images.
                             <br>
-                            [<a href="https://arxiv.org/pdf/2206.15255.pdf">Pdf</a>] [<a href="https://arxiv.org/abs/2206.15255">arXiv</a>] [<a href="https://github.com/med-air/EndoNeRF/">Code</a>] [<a href="https://med-air.github.io/EndoNeRF/">Webpage</a>]
+                            [<a href="https://Paper.org/abs/2206.15255">Paper</a>] [<a href="https://github.com/med-air/EndoNeRF/">Code</a>] [<a href="https://med-air.github.io/EndoNeRF/">Webpage</a>]
                         </span>
                     </div>
                 </div>
@@ -158,12 +181,12 @@
                         <papertitle>Multi-View Neural Human Rendering</papertitle>
                         <span><a href="http://wuminye.com">Minye Wu</a>, <u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=kYHf73IAAAAJ">Qiang Hu</a>, <a href="http://www.yu-jingyi.com/">Jingyi Yu</a></span>
                         <br>
-                        <span><i>CVPR 2020</i></span>
+                        <span><i>CVPR, 2020</i></span>
                         <br>
                         <span>
                             We present an end-to-end Neural Human Renderer (NHR) for dynamic human captures under the multi-view setting.
                             <br>
-                            [<a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_Multi-View_Neural_Human_Rendering_CVPR_2020_paper.pdf">Pdf</a>] [<a href="https://github.com/wuminye/NHR">Code</a>] [<a href="https://wuminye.github.io/NHR/">Webpage</a>]
+                            [<a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_Multi-View_Neural_Human_Rendering_CVPR_2020_paper.pdf">Paper</a>] [<a href="https://github.com/wuminye/NHR">Code</a>] [<a href="https://wuminye.github.io/NHR/">Webpage</a>]
                         </span>
                     </div>
                 </div>
@@ -177,14 +200,13 @@
                         <img width="100%" src="/images/demo/volrend_flame.png" />
                     </div>
                     <div class="col-9 abstract">
-                        <papertitle>Interactive Volume Renderer <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/volume_renderer" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/volume_renderer on GitHub">Star</a></span></papertitle>
+                        <papertitle>Interactive Volume Renderer</papertitle>
                         <br>
                         <span>
                             An interactive volume visualizer for displaying implicit functions, medical data, smoke, etc., using CUDA for real-time rendering.
                             <br><br>
-                            [<a href="https://github.com/yuehaowang/volume_renderer">Github</a>]
-                            [<a href="https://docs.google.com/presentation/d/1bGUZ0QmcSA8dAMxS9R-rMPZ3cpot1y-UYoVAk8R5lZc/edit?usp=sharing">Slides</a>]
-                            [<a href="https://drive.google.com/drive/folders/1H4_vyyNHNk-NSeIf7cve_XxySz47Aheg?usp=sharing">Videos</a>]
+                            <a href="https://github.com/yuehaowang/volume_renderer" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true" target="_blank"><i class="bi bi-github pe-1"></i> View on Github</a>
+                            <a href="https://drive.google.com/drive/folders/1H4_vyyNHNk-NSeIf7cve_XxySz47Aheg?usp=sharing" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true" target="_blank"><i class="bi bi-play-circle pe-1"></i> Videos</a>
                         </span>
                     </div>
                 </div>
@@ -194,14 +216,13 @@
                         <img width="100%" src="/images/demo/lets_cg.png" />
                     </div>
                     <div class="col-9 abstract">
-                        <papertitle>Let's Compute Graphics <span class="github-btn-icon"><a class="github-button" href="https://github.com/yuehaowang/lets_cg" data-icon="octicon-star" data-show-count="true" aria-label="Star yuehaowang/lets_cg on GitHub">Star</a></span></papertitle>
+                        <papertitle>Let's Compute Graphics</papertitle>
                         <br>
                         <span>
                             A course project collection of graphics algorithms and applications, including OpenGL, global illumination,
                             Loop subdivision, etc.
                             <br><br>
-                            [<a href="https://github.com/yuehaowang/lets_CG">Github</a>]
-                            [<a href="https://github.com/yuehaowang/lets_CG/tree/v1.0">Legacy Version</a>]
+                            <a href="https://github.com/yuehaowang/lets_CG" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true" target="_blank"><i class="bi bi-github pe-1"></i> View on Github</a>
                         </span>
                     </div>
                 </div>
@@ -230,6 +251,7 @@
                 <div class="mt-3" style="padding-left: 5px;">
                     <div style="padding-left: 10px;">
                         <ul>
+                            <li>Invited talk at OpenRobotLab @ Shanghai AI Laboratory: <i>"Editable Representations for NeRF"</i>, Jan 2024.</li>
                             <li>Invited talk at Olympus ATR: <i>"3D Reconstruction of Deformable Soft Tissues via NeRF"</i>, Mar 2023.</li>
                             <li>Invited speaker at TUM: <i><a href="https://www.cs.cit.tum.de/camp/news/article/camp-learning-day-nerf-meets-medical-imaging/" target="_blank">"CAMP Learning Day: NeRF meets Medical Imaging"</a></i>, Oct 2022.</li>
                         </ul>
@@ -241,7 +263,7 @@
 
             <footer class="text-end">
                 <a style="padding-right: 5px;" href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?yuehaowang" border="0" alt="Free Hit Counters"></a> unique visitors since Jul 2021.<br>
-                &copy; 2024 Yuehao Wang. Last update: Apr 03, 2024.<br>
+                &copy; 2024 Yuehao Wang. Last update: Jun 05, 2024.<br>
                 <p style="font-size: small;">
                     The website template is adapted from <a href="https://jonbarron.info/">[1]</a> and <a href="https://richzhang.github.io/">[2]</a>.
                 </p>
