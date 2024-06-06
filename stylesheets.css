@@ -179,6 +179,10 @@ main {
   color: #eee;
 }
 
+.section .highlight-light {
+  background-color: #f9f9f9;
+}
+
 #info .contact {
   padding: 2.5%;
   vertical-align: middle;
