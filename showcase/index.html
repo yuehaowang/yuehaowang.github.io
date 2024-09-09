@@ -27,6 +27,30 @@
             background-size: cover;
             background-position: center center;
         }
+
+        .card-body h5 {
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .card-top-cover {
+            overflow: hidden;
+            aspect-ratio: 1.5;
+        }
+        .card-top-cover img {
+            object-fit: cover;
+            object-position: 50% bottom;
+            height: 100%;
+        }
+
+        .accordion button:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid rgba(0, 0, 0, .125);
+        }
+        .accordion-button:not(.collapsed) {
+            color: #212529;
+            background-color: #f9f9f9;
+        }
     </style>
   </head>
   <body>
@@ -40,48 +64,161 @@
                     I believe this experience sparks my initial passion for computer vision and graphics research.
                     I also developed some utility tools and explored <a href="https://en.wikipedia.org/wiki/Creative_coding">creative coding</a>.
                     <br><br>
-                    Below is the archive of my coding projects, a large portion of which I developed during my high school years. Some of them are open-sourced and hosted on <a href="https://github.com/yuehaowang"><i class="bi-github" style="font-size: 1.0rem; padding-right: 1px;"></i> my github</a>.
+                    Below is an archive of my coding projects developed during middle school, high school, and my freshman year of college. Some of them are open-sourced and hosted on <a href="https://github.com/yuehaowang"><i class="bi-github" style="font-size: 1.0rem; padding-right: 1px;"></i> my github</a>.
                     <br>
-                    <i>Note: These coding works are licensed under a GPLv3.0 License, except for those open-source libraries with individual licenses placed in their project repositories accordingly. My favorite ones are marked with <i class="bi bi-star"></i>.</i>
+                    <i>Note: These coding works are licensed under a GPLv3.0 License, except for those open-source libraries with individual licenses placed in their project repositories accordingly.</i>
                 </p>
 
-                <div class="card mb-3 highlight-light">
-                    <img style="width: 100%;" class="img-fluid" src="/images/demo/games_poster3.png">
-                    <div class="card-body">
-                        <div class="row" style="margin-top: 0px;">
-                            <div class="col-sm-4 col-12 abstract">
-                                <strong><i class="bi bi-joystick" style="padding-right: 5px;"></i> Games</strong>
-                                <ul>
-                                    <li><a href="/games/crazy_racing/">Crazy Racing</a></li>
-                                    <li><a href="/games/flying_stone/">Flying Stone <sup><i class="bi bi-star"></i></sup></a></li>
-                                    <li><a href="/games/ink_spill/">Ink Spill</a></li>
-                                    <li><a href="/games/minesweeper/">Minesweeper</a></li>
-                                    <li><a href="/games/raglan_and_over/">Raglan and Over</a></li>
-                                    <li><a href="/games/sanguo_td/">SanguoTD <sup><i class="bi bi-star"></i></sup></a></li>
-                                </ul>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-top-cover">
+                            <img src="/images/demo/flying_stone_poster.png" class="card-img-top" alt="Flying Stone">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Flying Stone</h5>
+                          <p class="card-text">A simple physics game. Throw parabolic stones to repel birds moving in sinusoidal paths.</p>
+                          <a href="/games/flying_stone/" class="btn btn-outline-primary btn-sm d-block d-md-inline-block" role="button" aria-disabled="true">Play Online <i class="px-1 bi bi-joystick"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                          <div class="card-top-cover">
+                              <img src="/images/demo/pylash_tower_defense_sq.png" class="card-img-top" alt="Pylash">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Pylash</h5>
+                            <p class="card-text">A Python game engine with 2D graphics, tween animations, event systems, etc.</p>
+                            <a href="https://github.com/yuehaowang/pylash_engine" class="btn btn-outline-primary btn-sm d-block d-md-inline-block" role="button" aria-disabled="true">View on Github <i class="px-1 bi bi-github"></i></a>                         
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-top-cover">
+                            <img src="/images/demo/sanguo_td3.png" class="card-img-top" alt="SanguoTD">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">SanguoTD</h5>
+                          <p class="card-text">
+                            Tower defense set in the Three Kingdoms era of ancient China,
+                            inspired by <a href="https://en.wikipedia.org/wiki/Army_of_Darkness:_Defense" target="_blank"><i>AoD</i></a>.
+                          </p>
+                          <a href="/games/sanguo_td/" class="btn btn-outline-primary btn-sm d-block d-md-inline-block" role="button" aria-disabled="true">Play Online <i class="px-1 bi bi-joystick"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100">
+                          <div class="card-top-cover">
+                              <img src="/images/demo/shadow_scent.png" class="card-img-top" alt="Shadow Scent">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Shadow Scent</h5>
+                            <p class="card-text">A simple prototype to help visually impaired people with better gaming experience.</p>
+                            <a href="https://github.com/yuehaowang/ShadowScent" class="btn btn-outline-primary btn-sm d-block d-md-inline-block" role="button" aria-disabled="true">View on Github <i class="px-1 bi bi-github"></i></a>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                          <div class="card-top-cover">
+                              <img src="/images/demo/greeting_card4.png" class="card-img-top" style="object-position: 50% 35% !important;" alt="Greeting Card">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Greeting Card</h5>
+                            <p class="card-text">Creates firework animations for your greeting cards.</p>
+                            <br class="d-md-block d-none">
+                            <div class="btn-group d-flex" role="group" aria-label="Basic example">
+                                <a href="https://github.com/yuehaowang/greeting_card" class="btn btn-outline-primary btn-sm w-60" role="button" aria-disabled="true">View on Github <i class="px-1 bi bi-github d-md-none d-lg-inline"></i></a>
+                                <a href="/demo/greeting_card/?config_file=happy_2019_config.js" class="btn btn-outline-primary btn-sm w-40" role="button" aria-disabled="true">Demo</a>
                             </div>
-                            <div class="col-sm-4 col-12 abstract">
-                                <strong><i class="bi bi-boxes" style="padding-right: 5px;"></i> Toys & Demo</strong>
-                                <ul>
-                                    <li><a href="/demo/portals/index.html">Portals <sup><i class="bi bi-star"></i></sup></a></li>
-                                    <li><a href="https://github.com/yuehaowang/ShadowScent">Shadow Scent (Cubot)</a></li>
-                                    <li><a href="/demo/box2d_bomb/index.html">Box2d Bomb</a></li>
-                                    <li><a href="/demo/box2d_linkage/index.html">Box2d Linkage</a></li>
-                                    <li><a href="/demo/ridebike_box2d/index.html">Box2d Ride Bike</a></li>
-                                    <li><a href="/demo/sat_js/index.html">SAT Algorithm Demo</a></li>
-                                </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                          <div class="card-top-cover" style="background-color: #f9f9f9;">
+                              <img src="/images/demo/box2d_ridebike.png" class="card-img-top" style="object-position: 50% 50% !important;" alt="Box2D Demo">
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Box2D Demo</h5>
+                            <p class="card-text">2D rigid-body physics simulation using Box2DWeb.</p>
+                            <br class="d-md-block d-none">
+                            <div class="btn-group d-flex" role="group" aria-label="Basic example">
+                                <a href="/demo/ridebike_box2d/index.html" class="btn btn-outline-primary btn-sm w-100" role="button" aria-disabled="true">Bicycle</a>
+                                <a href="/demo/box2d_linkage/index.html" class="btn btn-outline-primary btn-sm w-100" role="button" aria-disabled="true">Linkage</a>
+                                <a href="/demo/box2d_bomb/index.html" class="btn btn-outline-primary btn-sm w-100" role="button" aria-disabled="true">Bomb</a>
                             </div>
-                            <div class="col-sm-4 col-12 abstract">
-                                <strong><i class="bi bi-nut" style="padding-right: 5px;"></i> Tools & Libraries</strong>
-                                <ul>
-                                    <li><a href="https://github.com/yuehaowang/pylash_engine">Pylash <sup><i class="bi bi-star"></i></sup></a></li>
-                                    <li><a href="https://github.com/yuehaowang/greeting_card">Greeting Card <sup><i class="bi bi-star"></i></sup></a></li>
-                                    <li><a href="/apps/greeting_card_creator/index.html">Greeting Card Creator</a></li>
-                                    <li><a href="/apps/wave_superposition/index.html">Wave Superposition</a></li>
-                                    <li><a href="https://github.com/yuehaowang/jpp.js">Jpp.js</a></li>
-                                </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion dark mt-3" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            More Projects
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row row-cols-2 row-cols-md-4 g-2">
+                                <div class="col">
+                                    <a href="/games/crazy_racing/" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">Crazy Racing</h6>
+                                    </a>                         
+                                </div>
+            
+                                <div class="col">
+                                    <a href="/games/raglan_and_over/" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">Raglan and Over</h6>
+                                    </a>
+                                </div>
+            
+                                <div class="col">
+                                    <a href="/games/ink_spill/" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">Ink Spill</h6>
+                                    </a>
+                                </div>
+            
+                                <div class="col">
+                                    <a href="/games/minesweeper/" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">Minesweeper</h6>
+                                    </a>
+                                </div>
+            
+                                <div class="col">
+                                    <a href="/demo/portals/" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">Portals</h6>
+                                    </a>
+                                </div>
+            
+                                <div class="col">
+                                    <a href="/demo/sat_js/" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">SAT Algorithm</h6>
+                                    </a>
+                                </div>
+            
+                                <div class="col">
+                                    <a href="https://github.com/yuehaowang/jpp.js" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">Jpp.js</h6>
+                                    </a>
+                                </div>
+            
+                                <div class="col">
+                                    <a href="/apps/wave_superposition/" style="width: 100%;" class="btn btn-outline-primary btn-lg d-inline-block" role="button" aria-disabled="true">
+                                        <h6 class="pb-0 mb-0">Wave Superposition</h6>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +231,7 @@
                     My taste for music is deeply rooted in the iconic sound of vintage bands, such as <i>Led Zeppelin</i>, <i>Eagles</i>, and <i>The Beatles</i>, as well as many guitarists like <i>Jimmy Page</i>, <i>Slash</i>, <i>Eric Clapton</i>, <i>Stevie Ray Vaughan</i>, <i>John Mayer</i>, to name just a few.
                 </p>
 
-                <div class="p-3 pt-0 pb-0">
+                <div class="p-3 pt-1 pb-0">
                     <div class="row item">
                         <div class="col-lg-4 p-0">
                             <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/4aiXs9Kh1x8?si=Ul92_zzVpYbIYdph&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -108,7 +245,7 @@
                         <div class="col-3 thumbnail">
                             <img class="img-thumbnail" width="100%" src="/images/album_covers/Spectrum.png" />
                         </div>
-                        <div class="col-9 abstract" id="album_spectrum">
+                        <div class="col-9 item-abs" id="album_spectrum">
                             <div class="mt-lg-2">
                                 <papertitle class="mb-2">Spectrum</papertitle>
                                 <span>
@@ -124,100 +261,11 @@
                 </div>
             </div>
 
-            <!-- <div class="section" id="art_music">
-                <heading>Photo Gallery 📷</heading>
-
-                <p class="mt-2">
-                    Besides rendering and processing pixels in my research, I also record pleasant moments in pixels.
-                </p>
-
-                <div class="row">
-                    <div class="col-md-4 col-12">
-                        <a href="/images/gallery/tolo_bay.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/tolo_bay.jpg" class="img-fluid mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">Tolo Harbour, HK</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/images/gallery/cuhk_2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/cuhk_2.jpg" class="img-fluid mt-md-3 mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">Wu Ho Man Yuen Bldg., CUHK</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/images/gallery/operahouse.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/operahouse.jpg" class="img-fluid mt-md-3 mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">Sydney Opera House</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-12 p-md-0">
-                        <a href="/images/gallery/NgongPing.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/NgongPing.jpg" class="img-fluid mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">Ngong Ping, HK</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/images/gallery/usydney_1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/usydney_1.jpg" class="img-fluid mt-md-2 mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">The University of Sydney</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-12">
-                        <a href="/images/gallery/cuhk_1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/cuhk_1.jpg" class="img-fluid mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">S.H. Ho College, CUHK</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/images/gallery/usydney_2.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/usydney_2.jpg" class="img-fluid mt-md-3 mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">The University of Sydney</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/images/gallery/boat.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <div class="bg-image">
-                                <img src="/images/gallery/lowres/boat.jpg" class="img-fluid mt-md-3 mt-2">
-                                <div class="position-absolute bottom-0 text-light w-100"
-                                    style="background-color: rgba(0, 0, 0, 0.5)">
-                                    <p class="p-2 m-0">Sentosa, Singapore</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-
             <div style="margin-top: 50px;"><hr></div>
 
             <footer class="text-end">
                 <a style="padding-right: 5px;" href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?yuehaowang"border="0" alt="Free Hit Counters"></a> unique visitors since Jul 2021.<br>
-                &copy; 2024 Yuehao Wang. Last update: Apr 03, 2024.<br>
+                &copy; 2024 Yuehao Wang. Last update: Sep 09, 2024.<br>
             </footer>
         </main>
     </div>

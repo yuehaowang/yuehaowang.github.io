@@ -134,7 +134,7 @@ main {
 .section .thumbnail {
   padding: 20px;
 }
-.section .abstract {
+.section .item-abs {
   padding: 20px;
 }
 .section .item {
