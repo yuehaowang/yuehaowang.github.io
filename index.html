@@ -25,21 +25,17 @@
         <main>
             <div id="info" class="row">
                 <div class="col-4 avatar">
-                    <img style="width: 100%;" src="/images/portrait.png" />
-                    <p style="text-align: right; padding-top: 10px; padding-right: 5px; margin-bottom: 0px; font-size: 15px;">
-                        <i class="bi-camera-fill" style="font-size: 1.0rem; padding-right: 1px;"></i> at <a href="https://goo.gl/maps/5YpCC8WKZkgdf4zs7">Sai Wan Beach</a> in 2022
-                    </p>
+                    <img style="width: 100%; max-width: 250px;" src="/images/portrait.png" />
                 </div>
                 <div class="col-8 contact">
                     <div class="d-flex justify-content-center">
                         <p>
-                            <name>Yuehao Wang </name>
+                            <name>Yuehao Wang</name>
                             <br><br>
                             <span>
-                                PhD Student<br>
+                                Ph.D. Student<br>
                                 Department of Computer Science<br>
-                                The University of Texas at Austin<br>
-                                2501 Speedway, EER, Austin, TX, U.S.
+                                The University of Texas at Austin
                             </span><br><br>
                             <span>
                                 <i class="bi-envelope" style="font-size: 1.0rem; color: black; padding-right: 1px;"></i> yuehao [at] utexas.edu<br>
@@ -60,23 +56,17 @@
 
             <hr>
             <div id="bio">
-                I am a first-year PhD student in UT Austin, advised by <a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=en" target="_blank">Prof. Atlas Wang</a> and <a href="https://www.cs.utexas.edu/~huangqx/" target="_blank">Prof. Qixing Huang</a> at <a href="https://vita-group.github.io/" target="_blank">VITA group</a>.
-                I did my Master of Philosophy in CUHK, where I was fortunate to work with <a href="https://tianfan.info/" target="_blank">Prof. Tianfan Xue</a>.
-                Before that, I received my bachelor's degree from ShanghaiTech University.
+                I am a Ph.D. student at UT Austin with <a href="https://vita-group.github.io/" target="_blank">VITA Group</a>, advised by <a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=en" target="_blank">Prof. Atlas Wang</a> and <a href="https://www.cs.utexas.edu/~huangqx/" target="_blank">Prof. Qixing Huang</a>.
+                Before that, I did my Master of Philosophy at CUHK, where I was fortunate to work with <a href="https://tianfan.info/" target="_blank">Prof. Tianfan Xue</a>.
+                I obtained my bachelor's degree from ShanghaiTech University.
             </div>
-            <!-- <div id="bio">
-                I am a final year M.Phil. student at The Chinese University of Hong Kong.
-                Before that, I obtained my bachelor's degree at ShanghaiTech University.
-                Outside of academics, my hobbies include playing the (electric) guitar, creative coding, and designing video games
-                (check out <a href="/showcase/">my showcase</a>).
-            </div> -->
             <hr>
 
             <div class="section" id="research">
                 <heading>Research</heading>
 
                 <p class="mt-2 text-justify">
-                    My topics of interest include computer graphics, 3D vision, computational photography, and their intersections with machine learning.
+                    My current research interests include computer graphics, computer vision, machine learning, and computational photography.
                     In particular, I work on projects in generative models, neural rendering, and 3D scene reconstruction.
                     Below are my research publications.
                     <p class="mt-1">
@@ -93,6 +83,27 @@
                     </li>
                 </ul> -->
 
+                <div class="row item over-video pub">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <img width="100%" src="/images/paper_thumbnail/mamba_recency_curves_2.png" />
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/mamba_recency_curves.png" />
+                    </div>
+                    <div class="col-9 item-abs">
+                        <div>
+                        <papertitle>Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing</papertitle>
+                        <div class="authors"><span><a href="https://peihaowang.github.io/">Peihao Wang</a>, <a href="https://cairuisi.github.io/">Ruisi Cai</a>, <u>Yuehao Wang</u>, <a href="https://scholar.google.co.uk/citations?user=mMPLH_kAAAAJ">Jiajun Zhu</a>, <a href="https://openreview.net/profile?id=~Pragya_Srivastava1">Pragya Srivastava</a>, <a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=en">Zhangyang Wang</a>, <a href="https://sites.google.com/view/panli-purdue/home">Pan Li</a></span></div>
+                        <div class="venue"><span><i>ICLR, 2025</i></span></div>
+                        <div class="summary"><span>
+                            We show that SSMs suffer from recency bias and over-smoothing, and propose a polarization technique to improve long-range recall and enable deeper SSMs.<br>
+                        </span></div>
+                        <div class="links"><span>[<a href="https://arxiv.org/abs/2501.00658">Paper</a>] [<a href="https://github.com/VITA-Group/SSM-Bottleneck">Code</a>]
+                        </span></div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row item over-video selected pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
@@ -103,15 +114,15 @@
                         <img width="100%" src="/images/paper_thumbnail/bilarf.jpg" />
                     </div>
                     <div class="col-9 item-abs">
+                        <div>
                         <papertitle>Bilateral Guided Radiance Field Processing</papertitle>
-                        <span><u>Yuehao Wang</u>, <a href="https://github.com/1ss0dumb">Chaoyi Wang</a>, <a href="https://s2.hk/">Bingchen Gong</a>, <a href="https://tianfan.info/">Tianfan Xue</a></span>
-                        <br>
-                        <span><i>SIGGRAPH (ACM TOG), 2024</i> <b style="color: blue; margin-left: 5px;">(Best Paper Honorable Mention)</b></span>
-                        <br>
-                        <span>
-                            We introduce 2D and 3D image signal processing (ISP) pipelines to NeRF for handling photometric variation and retouching 3D scenes.<br>
-                            [<a href="https://arxiv.org/abs/2406.00448">Paper</a>] [<a href="https://github.com/yuehaowang/bilarf">Code</a>] [<a href="https://bilarfpro.github.io/">Webpage</a>]
-                        </span>
+                        <div class="authors"><span><u>Yuehao Wang</u>, <a href="https://github.com/1ss0dumb">Chaoyi Wang</a>, <a href="https://s2.hk/">Bingchen Gong</a>, <a href="https://tianfan.info/">Tianfan Xue</a></span></div>
+                        <div class="venue"><span><i>SIGGRAPH (ACM TOG), 2024</i> <b style="color: blue; margin-left: 5px;">(Best Paper Honorable Mention)</b></span></div>
+                        <div class="summary"><span>
+                            We introduce 2D and 3D image signal processing (ISP) pipelines to radiance fields for handling photometric variation and retouching 3D scenes.<br>
+                        </span></div>
+                        <div class="links"><span>[<a href="https://arxiv.org/abs/2406.00448">Paper</a>] [<a href="https://github.com/yuehaowang/bilarf">Code</a>] [<a href="https://bilarfpro.github.io/">Webpage</a>]</span></div>
+                        </div>
                     </div>
                 </div>
 
@@ -125,20 +136,19 @@
                         <img width="100%" src="/images/paper_thumbnail/seamlessnerf.png" />
                     </div>
                     <div class="col-9 item-abs">
-                        <papertitle style="max-width: 550px; display: block;">SeamlessNeRF: Stitching Part NeRFs with Gradient Propagation</papertitle>
-                        <span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span>
-                        <br>
-                        <span><i>SIGGRAPH Asia, 2023</i></span>
-                        <br>
-                        <span>
+                        <div>
+                        <papertitle>SeamlessNeRF: Stitching Part NeRFs with Gradient Propagation</papertitle>
+                        <div class="authors"><span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span></div>
+                        <div class="venue"><span><i>SIGGRAPH Asia, 2023</i></span></div>
+                        <div class="summary"><span>
                             We present a gradient domain approach for seamless appearance blending of part NeRFs, drawing inspiration from Poisson image editing.
-                            <br>
-                            [<a href="https://arxiv.org/abs/2311.16127">Paper</a>] [<a href="https://sites.google.com/view/seamlessnerf">Webpage</a>]
-                        </span>
+                        </span></div>
+                        <div class="links"><span>[<a href="https://arxiv.org/abs/2311.16127">Paper</a>] [<a href="https://sites.google.com/view/seamlessnerf">Webpage</a>]</span></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row item over-video selected pub">
+                <div class="row item over-video pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -148,16 +158,15 @@
                         <img width="100%" src="/images/paper_thumbnail/recolornerf.png" />
                     </div>
                     <div class="col-9 item-abs">
-                        <papertitle style="max-width: 530px; display: block;">RecolorNeRF: Layer Decomposed Radiance Fields for Efficient Color Editing of 3D Scenes</papertitle>
-                        <span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span>
-                        <br>
-                        <span><i>ACM MM, 2023</i></span>
-                        <br>
-                        <span>
-                            We decompose NeRF into pure-color layers for palette-based color editing of 3D scenes.
-                            <br>
-                            [<a href="https://arxiv.org/abs/2301.07958">Paper</a>] [<a href="https://github.com/yuehaowang/RecolorNeRF/">Code</a>] [<a href="https://sites.google.com/view/recolornerf">Webpage</a>]
-                        </span>
+                        <div>
+                        <papertitle style="max-width: 500px; display: block;">RecolorNeRF: Layer Decomposed Radiance Fields for Efficient Color Editing of 3D Scenes</papertitle>
+                        <div class="authors"><span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span></div>
+                        <div class="venue"><span><i>ACM MM, 2023</i></span></div>
+                        <div class="summary"><span>
+                            We decompose NeRF into pure-color layers for palette-based color editing of 3D scenes.                            
+                        </span></div>
+                        <div class="links"><span>[<a href="https://arxiv.org/abs/2301.07958">Paper</a>] [<a href="https://github.com/yuehaowang/RecolorNeRF/">Code</a>] [<a href="https://sites.google.com/view/recolornerf">Webpage</a>]</span></div>
+                        </div>
                     </div>
                 </div>
                 
@@ -171,20 +180,19 @@
                         <img width="100%" src="/images/paper_thumbnail/endonerf2.png" />
                     </div>
                     <div class="col-9 item-abs">
+                        <div>
                         <papertitle style="max-width: 550px; display: block;">Neural Rendering for Stereo 3D Reconstruction of Deformable Tissues in Robotic Surgery</papertitle>
-                        <span><u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, <a href="https://scholar.google.com/citations?user=YCMlfpAAAAAJ">Siu Hin Fan</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span>
-                        <br>
-                        <span><i>MICCAI, 2022</i> <b style="color: blue; margin-left: 5px;">(Oral Presentation, Student Travel Award, Young Scientist Award)</b></span>
-                        <br>
-                        <span>
-                            A NeRF-based method for reconstructing deformable tissues from stereo endoscopic images.
-                            <br>
-                            [<a href="https://arxiv.org/abs/2206.15255">Paper</a>] [<a href="https://github.com/med-air/EndoNeRF/">Code</a>] [<a href="https://med-air.github.io/EndoNeRF/">Webpage</a>]
-                        </span>
+                        <div class="authors"><span><u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, <a href="https://scholar.google.com/citations?user=YCMlfpAAAAAJ">Siu Hin Fan</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span></div>
+                        <div class="venue"><span><i>MICCAI, 2022</i> <b style="color: blue; margin-left: 5px;">(Oral Presentation, Student Travel Award, Young Scientist Award)</b></span></div>
+                        <div class="summary"><span>
+                            A NeRF-based method for reconstructing deformable tissues from stereo endoscopic images.                            
+                        </span></div>
+                        <div class="links"><span>[<a href="https://arxiv.org/abs/2206.15255">Paper</a>] [<a href="https://github.com/med-air/EndoNeRF/">Code</a>] [<a href="https://med-air.github.io/EndoNeRF/">Webpage</a>]</span></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row item over-video selected pub">
+                <div class="row item over-video pub">
                     <div class="col-3 thumbnail">
                         <div class="overlay-video">
                             <video width="100%" playsinline muted loop>
@@ -194,16 +202,15 @@
                         <img width="100%" src="/images/paper_thumbnail/nhr.jpg" />
                     </div>
                     <div class="col-9 item-abs">
-                        <papertitle>Multi-View Neural Human Rendering</papertitle>
-                        <span><a href="http://wuminye.com">Minye Wu</a>, <u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=kYHf73IAAAAJ">Qiang Hu</a>, <a href="http://www.yu-jingyi.com/">Jingyi Yu</a></span>
-                        <br>
-                        <span><i>CVPR, 2020</i></span>
-                        <br>
-                        <span>
+                        <div>
+                        <papertitle>Multi-view Neural Human Rendering</papertitle>
+                        <div class="authors"><span><a href="http://wuminye.com">Minye Wu</a>, <u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=kYHf73IAAAAJ">Qiang Hu</a>, <a href="http://www.yu-jingyi.com/">Jingyi Yu</a></span></div>
+                        <div class="venue"><span><i>CVPR, 2020</i></span></div>
+                        <div class="summary"><span>
                             We present an end-to-end Neural Human Renderer (NHR) for dynamic human captures under the multi-view setting.
-                            <br>
-                            [<a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_Multi-View_Neural_Human_Rendering_CVPR_2020_paper.pdf">Paper</a>] [<a href="https://github.com/wuminye/NHR">Code</a>] [<a href="https://wuminye.github.io/NHR/">Webpage</a>]
-                        </span>
+                        </span></div>
+                        <div class="links"><span>[<a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_Multi-View_Neural_Human_Rendering_CVPR_2020_paper.pdf">Paper</a>] [<a href="https://github.com/wuminye/NHR">Code</a>] [<a href="https://wuminye.github.io/NHR/">Webpage</a>]</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,14 +223,16 @@
                         <img width="100%" src="/images/demo/volrend_flame.png" />
                     </div>
                     <div class="col-9 item-abs">
+                        <div>
                         <papertitle>Interactive Volume Renderer</papertitle>
-                        <br>
-                        <span>
+                        <div class="summary"><span>
                             An interactive volume visualizer for displaying implicit functions, medical data, smoke, etc., using CUDA for real-time rendering.
-                            <br><br>
+                        </span></div>
+                        <div class="links"><span>
                             <a href="https://github.com/yuehaowang/volume_renderer" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true" target="_blank"><i class="bi bi-github pe-1"></i> View on Github</a>
                             <a href="https://drive.google.com/drive/folders/1H4_vyyNHNk-NSeIf7cve_XxySz47Aheg?usp=sharing" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true" target="_blank"><i class="bi bi-play-circle pe-1"></i> Videos</a>
-                        </span>
+                        </span></div>
+                        </div>
                     </div>
                 </div>
 
@@ -232,14 +241,15 @@
                         <img width="100%" src="/images/demo/lets_cg.png" />
                     </div>
                     <div class="col-9 item-abs">
+                        <div>
                         <papertitle>Let's Compute Graphics</papertitle>
-                        <br>
-                        <span>
+                        <div class="summary"><span>
                             A course project collection of graphics algorithms and applications, including OpenGL, global illumination,
                             Loop subdivision, etc.
-                            <br><br>
+                        </span></div>
+                        <div class="links"><span>
                             <a href="https://github.com/yuehaowang/lets_CG" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true" target="_blank"><i class="bi bi-github pe-1"></i> View on Github</a>
-                        </span>
+                        </span></div>
                     </div>
                 </div>
             </div>
@@ -250,6 +260,7 @@
                 <div class="mt-3" style="padding-left: 5px;">
                     <div style="padding-left: 10px;">
                         <ul>
+                            <li>Invited talk at Xiamen University: <i>"Radiance Field Processing"</i>, Sep 2024.</li>
                             <li>Conference presentation at SIGGRAPH 2024: <i><a href="https://youtu.be/tiqnYX63iew?si=MqLR8fPn3aFvR5VP" target="_blank">"Bilateral Guided Radiance Field Processing"</a></i>, Aug 2024.</li>
                             <li>Invited talk at OpenRobotLab @ Shanghai AI Laboratory: <i>"Editable Representations for NeRF"</i>, Jan 2024.</li>
                             <li>Invited talk at Olympus ATR: <i>"3D Reconstruction of Deformable Soft Tissues via NeRF"</i>, Mar 2023.</li>
@@ -265,11 +276,11 @@
                 <div class="mt-3" style="padding-left: 5px;">
                     <div style="padding-left: 10px;">
                         <ul>
-                            <li>Multimedia Coding and Processing - Fall 2023 @ CUHK (TA)</li>
-                            <li>Fundamentals of Artificial Intelligence - Fall 2021, Fall 2022 @ CUHK (TA)</li>
-                            <li>Computer Graphics - Spring 2021 @ ShanghaiTech (TA)</li>
-                            <li>Linear Algebra - Fall 2019, Fall 2020 @ ShanghaiTech (TA)</li>
-                            <li>Introduction to Computer Programming - Fall 2018 @ ShanghaiTech (TA)</li>
+                            <li>Multimedia Coding and Processing (Fall 2023) @ CUHK (TA)</li>
+                            <li>Fundamentals of Artificial Intelligence (Fall 2021, Fall 2022) @ CUHK (TA)</li>
+                            <li>Computer Graphics (Spring 2021) @ ShanghaiTech (TA)</li>
+                            <li>Linear Algebra (Fall 2019, Fall 2020) @ ShanghaiTech (TA)</li>
+                            <li>Introduction to Computer Programming (Fall 2018) @ ShanghaiTech (TA)</li>
                         </ul>
                     </div>
                 </div>
@@ -291,7 +302,7 @@
 
             <footer class="text-end">
                 <a style="padding-right: 5px;" href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?yuehaowang" border="0" alt="Free Hit Counters"></a> unique visitors since Jul 2021.<br>
-                &copy; 2024 Yuehao Wang. Last update: Sep 09, 2024.<br>
+                &copy; 2025 Yuehao Wang. Last update: Feb 16, 2025.<br>
                 <p style="font-size: small;">
                     The website template is adapted from <a href="https://jonbarron.info/">[1]</a> and <a href="https://richzhang.github.io/">[2]</a>.
                 </p>
@@ -305,7 +316,7 @@
         function main() {
             overlay_video();
             pub_tabs();
-            show_pub_by_classname('selected');
+            // show_pub_by_classname('selected');
         }
         function overlay_video() {
             var nodes = document.querySelectorAll('.over-video');
@@ -313,12 +324,16 @@
                 node = nodes[i]
                 node.addEventListener('mouseenter', function(event) {
                     this.querySelector('.overlay-video').style.opacity = 1;
-                    this.querySelector('video').currentTime = 0;
-                    this.querySelector('video').play();
+                    if(this.querySelector('video')) {
+                        this.querySelector('video').currentTime = 0;
+                        this.querySelector('video').play();
+                    }
                 });
                 node.addEventListener('mouseleave', function(event) {
                     this.querySelector('.overlay-video').style.opacity = 0;
-                    this.querySelector('video').pause();
+                    if(this.querySelector('video')) {
+                        this.querySelector('video').pause();
+                    }
                 });
             }
         }

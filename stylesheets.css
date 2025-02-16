@@ -135,26 +135,45 @@ main {
   padding: 20px;
 }
 .section .item-abs {
+  display: flex;
   padding: 20px;
+  margin-top: -5px;
+  align-items: center;
+}
+.section .item-abs > div {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .section .item {
   /* margin-top: 10px; */
   transition: background-color 0.2s;
 }
-.section .item:hover {
+/* .section .item:hover {
   background-color: #f1f1f1;
-}
+} */
 .section papertitle {
   font-size: 16px;
   font-weight: 700;
   display: block;
-  max-width: 550px;
+  line-height: 1.5;
+  /* max-width: 550px; */
 }
+.section .authors, .venue, .summary {
+  line-height: 1.2;
+  /* margin-top: 5px;
+  margin-bottom: 5px; */
+}
+/* .section .links {
+  margin-top: 5px;
+} */
 .section span {
   font-size: 14px;
 }
 .section .highlight{
-  background: #ffffe0;
+  /* background: #ffffd0; */
+  background-color: #ffffcd;
 }
 
 .section .highlight-gray{
@@ -219,4 +238,33 @@ footer {
   height: 0;
   opacity: 0;
   transition: opacity 0.5s
+}
+
+@media (max-width: 576px) {
+  /* Styles for small devices and below */
+
+  .section .summary {
+    display: none;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  /* Styles for small devices and below */
+
+  .section .links {
+    margin-top: 2px;
+  }
+
+  .section .authors, .venue {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .section .summary {
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
 }
