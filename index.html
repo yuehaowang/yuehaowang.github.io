@@ -66,8 +66,8 @@
                 <heading>Research</heading>
 
                 <p class="mt-2 text-justify">
-                    My current research interests include computer graphics, computer vision, machine learning, and computational photography.
-                    In particular, I work on projects in generative models, neural rendering, and 3D scene reconstruction.
+                    My current research interests include computer vision, computer graphics, machine learning, and computational photography.
+                    In particular, I work on fundamental problems and applications in generative models, neural rendering, and 3D scene representations.
                     Below are my research publications.
                     <p class="mt-1">
                         <i>Note: * indicates authors with equal contribution.</i>
@@ -82,6 +82,50 @@
                         <a href="#" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="pub" type="button" role="tab" aria-selected="false">Full List</a>
                     </li>
                 </ul> -->
+
+                <div class="row item over-video selected pub">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/steepgs.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/steepgs.png" />
+                    </div>
+                    <div class="col-9 item-abs">
+                        <div>
+                        <papertitle>Steepest Descent Density Control for Compact 3D Gaussian Splatting</papertitle>
+                        <div class="authors"><span><a href="https://peihaowang.github.io/">Peihao Wang</a>*, <u>Yuehao Wang</u>*, <a href="https://wdilin.github.io/">Dilin Wang</a>, <a href="https://scholar.google.com/citations?user=jaobZDsAAAAJ">Sreyas Mohan</a>, <a href="https://zhiwenfan.github.io/">Zhiwen Fan</a>, <a href="https://sites.google.com/view/lemeng-wu/home">Lemeng Wu</a>,  <a href="https://cairuisi.github.io/">Ruisi Cai</a>, <a href="https://yuyingyeh.github.io/">Yu-Ying Yeh</a>, <a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=en">Zhangyang Wang</a>, <a href="https://www.cs.utexas.edu/~lqiang/">Qiang Liu</a>, <a href="https://scholar.google.co.in/citations?hl=en&user=8KF99lYAAAAJ">Rakesh Ranjan</a></span></div>
+                        <div class="venue"><span><i>CVPR, 2025</i></span></div>
+                        <div class="summary"><span>
+                            Provable 3DGS densification by moving Gaussians towards the steepest descent direction.
+                        </span></div>
+                        <div class="links"><span>[<a href="https://arxiv.org/abs/2505.05587">Paper</a>] [<a href="https://github.com/facebookresearch/SteepGS">Code</a>] [<a href="https://vita-group.github.io/SteepGS/">Webpage</a>]</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row item over-video selected pub">
+                    <div class="col-3 thumbnail">
+                        <div class="overlay-video">
+                            <video width="100%" playsinline muted loop>
+                                <source src="/images/paper_thumbnail/flexgs.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        <img width="100%" src="/images/paper_thumbnail/flexgs.png" />
+                    </div>
+                    <div class="col-9 item-abs">
+                        <div>
+                        <papertitle>FlexGS: Train Once, Deploy Everywhere with Many-in-One Flexible 3D Gaussian Splatting</papertitle>
+                        <div class="authors"><span><a href="https://scholar.google.com/citations?user=UiejE-oAAAAJ">Hengyu Liu</a>*, <u>Yuehao Wang</u>*, <a href="https://chenxinli001.github.io/">Chenxin Li</a>*, <a href="https://cairuisi.github.io/">Ruisi Cai</a>, <a href="https://www.kevin-ai.com/">Kevin Wang</a>, <a href="https://wymancv.github.io/wuyang.github.io/">Wuyang Li</a>, <a href="https://www.pmolchanov.com/">Pavlo Molchanov</a>, <a href="https://peihaowang.github.io/">Peihao Wang</a>, <a href="https://scholar.google.com/citations?user=pxFyKAIAAAAJ&hl=en">Zhangyang Wang</a></span></div>
+                        <div class="venue"><span><i>CVPR, 2025</i></span></div>
+                        <div class="summary"><span>
+                            Elastic inference of 3DGS to meet model size budget and maintain rendering quality.
+                        </span></div>
+                        <div class="links"><span>[<a href="https://www.arxiv.org/abs/2506.04174">Paper</a>] [<a href="https://github.com/LiuHengyu321/FlexGS">Code</a>] [<a href="https://flexgs.github.io/">Webpage</a>]</span></div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row item over-video pub">
                     <div class="col-3 thumbnail">
@@ -117,7 +161,7 @@
                         <div>
                         <papertitle>Bilateral Guided Radiance Field Processing</papertitle>
                         <div class="authors"><span><u>Yuehao Wang</u>, <a href="https://github.com/1ss0dumb">Chaoyi Wang</a>, <a href="https://s2.hk/">Bingchen Gong</a>, <a href="https://tianfan.info/">Tianfan Xue</a></span></div>
-                        <div class="venue"><span><i>SIGGRAPH (ACM TOG), 2024</i> <b style="color: blue; margin-left: 5px;">(Best Paper Honorable Mention)</b></span></div>
+                        <div class="venue"><span><i>SIGGRAPH (ACM TOG), 2024</i> <b style="color: #002bff; margin-left: 5px;">(Best Paper Honorable Mention)</b></span></div>
                         <div class="summary"><span>
                             We introduce 2D and 3D image signal processing (ISP) pipelines to radiance fields for handling photometric variation and retouching 3D scenes.<br>
                         </span></div>
@@ -159,7 +203,7 @@
                     </div>
                     <div class="col-9 item-abs">
                         <div>
-                        <papertitle style="max-width: 500px; display: block;">RecolorNeRF: Layer Decomposed Radiance Fields for Efficient Color Editing of 3D Scenes</papertitle>
+                        <papertitle>RecolorNeRF: Layer Decomposed Radiance Fields for Efficient Color Editing of 3D Scenes</papertitle>
                         <div class="authors"><span><a href="https://s2.hk/">Bingchen Gong</a>*, <u>Yuehao Wang</u>*, <a href="https://scholar.google.com/citations?user=z-rqsR4AAAAJ">Xiaoguang Han</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span></div>
                         <div class="venue"><span><i>ACM MM, 2023</i></span></div>
                         <div class="summary"><span>
@@ -181,9 +225,9 @@
                     </div>
                     <div class="col-9 item-abs">
                         <div>
-                        <papertitle style="max-width: 550px; display: block;">Neural Rendering for Stereo 3D Reconstruction of Deformable Tissues in Robotic Surgery</papertitle>
+                        <papertitle>Neural Rendering for Stereo 3D Reconstruction of Deformable Tissues in Robotic Surgery</papertitle>
                         <div class="authors"><span><u>Yuehao Wang</u>, <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ">Yonghao Long</a>, <a href="https://scholar.google.com/citations?user=YCMlfpAAAAAJ">Siu Hin Fan</a>, <a href="https://scholar.google.com/citations?user=iHh7IJQAAAAJ">Qi Dou</a></span></div>
-                        <div class="venue"><span><i>MICCAI, 2022</i> <b style="color: blue; margin-left: 5px;">(Oral Presentation, Student Travel Award, Young Scientist Award)</b></span></div>
+                        <div class="venue"><span><i>MICCAI, 2022</i> <b style="color: #002bff; margin-left: 5px;">(Oral Presentation, Student Travel Award, Young Scientist Award)</b></span></div>
                         <div class="summary"><span>
                             A NeRF-based method for reconstructing deformable tissues from stereo endoscopic images.                            
                         </span></div>
@@ -302,7 +346,7 @@
 
             <footer class="text-end">
                 <a style="padding-right: 5px;" href="https://www.easycounter.com/"><img src="https://www.easycounter.com/counter.php?yuehaowang" border="0" alt="Free Hit Counters"></a> unique visitors since Jul 2021.<br>
-                &copy; 2025 Yuehao Wang. Last update: Feb 16, 2025.<br>
+                &copy; 2025 Yuehao Wang. Last update: Jun 05, 2025.<br>
                 <p style="font-size: small;">
                     The website template is adapted from <a href="https://jonbarron.info/">[1]</a> and <a href="https://richzhang.github.io/">[2]</a>.
                 </p>
