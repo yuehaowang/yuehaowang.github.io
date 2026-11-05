@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yuehao Wang is a Ph.D. student in computer science at UT Austin, working on machine learning, computer vision, computer graphics, and computational photography.">
+    <meta name="theme-color" content="#f8f6f1">
+    <title>Yuehao Wang</title>
+    <script src="theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      <header class="site-header">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" hidden>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <h1>Yuehao Wang</h1>
+        <p class="affiliation">Computer Science <span class="separator" aria-hidden="true"></span> The University of Texas at Austin</p>
+      </header>
+
+      <main id="main">
+        <section class="biography" aria-label="About me">
+          <p>I am a Ph.D. student at UT Austin with <a href="https://www.vita-group.space/">VITA Group</a>, advised by <a href="https://www.vita-group.space/pi/">Prof. Atlas Wang</a> and <a href="https://www.cs.utexas.edu/~huangqx/">Prof. Qixing Huang</a>.</p>
+          <p>Previously, I completed my Master of Philosophy at CUHK, where I was fortunate to work with <a href="https://tianfan.info/">Prof. Tianfan Xue</a>. I received my bachelor's degree from ShanghaiTech.</p>
+
+          <div class="contact">
+            Email: yuehao[at]utexas.edu
+            <nav class="profile-links" aria-label="Academic and social profiles">
+              <a href="https://scholar.google.com/citations?hl=en&amp;user=WMAx_-gAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>
+              <a href="https://github.com/yuehaowang">GitHub</a>
+              <a href="https://www.linkedin.com/in/yuehaowang/">LinkedIn</a>
+              <a href="https://x.com/yuehaowang">X</a>
+            </nav>
+          </div>
+        </section>
+
+        <section class="research" aria-labelledby="research-heading">
+          <h2 id="research-heading">Research</h2>
+          <p>
+            I enjoy working on fundamental problems and applications in machine learning.
+            My current research focuses on language modeling (diffusion language models, visual coding agents), training efficiency (decentralized training, representation alignment), and unified generation (autoregressive diffusion).
+          </p>
+        </section>
+
+        <section class="publications" aria-labelledby="publications-heading">
+          <h2 id="publications-heading">Selected work</h2>
+          <p class="publication-note">* denotes equal contribution.</p>
+          <ol class="publication-list">
+            <li>
+              <article aria-labelledby="decentralized-title">
+                <p class="venue">Technical report <span class="separator" aria-hidden="true"></span> 2026</p>
+                <h3 id="decentralized-title"><a href="papers/2026_Decentralized_DLLM.pdf">Decentralized Diffusion Language Models</a></h3>
+                <p class="authors"><strong>Yuehao Wang</strong>, Jinghan Ke, Yuqing Jian, Peihao Wang, Jiajun Zhu, Yifan Yu, Qinsi Wang, Qixing Huang, Chenfeng Xu, Zhangyang Wang</p>
+                <!-- <p class="summary">We derive a decentralized form of discrete diffusion for DLM training, reducing cross-node synchronization costs and outperforming large-batch DDP.</p> -->
+                <ul class="paper-links" aria-label="Resources for the decentralized diffusion language models paper">
+                  <li><a href="papers/2026_Decentralized_DLLM.pdf">Paper</a></li>
+                </ul>
+              </article>
+            </li>
+            <li>
+              <article aria-labelledby="spectral-title">
+                <p class="venue">ICML <span class="separator" aria-hidden="true"></span> 2026</p>
+                <h3 id="spectral-title"><a href="https://arxiv.org/abs/2609.08253">Revisiting Spectral Representations in Generative Diffusion Models</a></h3>
+                <p class="authors"><strong>Yuehao Wang</strong>, Peihao Wang, Hanwen Jiang, Ziyi Yang, Qixing Huang, Zhangyang Wang</p>
+                <p class="award">Presented as a spotlight paper at ICML 2026 Workshop FoGen.</p>
+                <!-- <p class="summary">Our theoretical results connect spectral representation learning with diffusion models, thereby introducing a self-supervised regularizer to improve image and point cloud generation.</p> -->
+                <ul class="paper-links" aria-label="Resources for the spectral representations paper">
+                  <li><a href="https://arxiv.org/pdf/2609.08253">Paper</a></li>
+                  <li><a href="https://github.com/yuehaowang/spectral-reg-diffusion">Code</a></li>
+                </ul>
+              </article>
+            </li>
+            <li>
+              <article aria-labelledby="scene-title">
+                <p class="venue">Technical report <span class="separator" aria-hidden="true"></span> 2026</p>
+                <h3 id="scene-title"><a href="https://arxiv.org/abs/2604.16552">Autoregressive Diffusion for Compositional Text-to-Scene Generation</a></h3>
+                <p class="authors">Zhenggang Tang*, <strong>Yuehao Wang</strong>*, Yuchen Fan, Jun-Kun Chen, Yu-Ying Yeh, Kihyuk Sohn, Zhangyang Wang, Qixing Huang, Alexander Schwing, Rakesh Ranjan, Dilin Wang, Zhicheng Yan</p>
+                <!-- <p class="summary">We train a 7B multimodal autoregressive diffusion model with a Transfusion architecture for compositional scene generation from sequential text instructions.</p> -->
+                <ul class="paper-links" aria-label="Resources for the compositional text-to-scene generation paper">
+                  <li><a href="https://arxiv.org/pdf/2604.16552">Paper</a></li>
+                </ul>
+              </article>
+            </li>
+            <li>
+              <article aria-labelledby="ssm-title">
+                <p class="venue">ICLR <span class="separator" aria-hidden="true"></span> 2025</p>
+                <h3 id="ssm-title"><a href="https://arxiv.org/abs/2501.00658">Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing</a></h3>
+                <p class="authors">Peihao Wang, Ruisi Cai, <strong>Yuehao Wang</strong>, Jiajun Zhu, Pragya Srivastava, Zhangyang Wang, Pan Li</p>
+                <!-- <p class="summary">We show that SSMs suffer from recency bias and over-smoothing, and propose a polarization technique to improve long-range recall and enable deeper SSMs.</p> -->
+                <ul class="paper-links" aria-label="Resources for the state space models paper">
+                  <li><a href="https://arxiv.org/pdf/2501.00658">Paper</a></li>
+                  <li><a href="https://github.com/VITA-Group/SSM-Bottleneck">Code</a></li>
+                </ul>
+              </article>
+            </li>
+            <li>
+              <article aria-labelledby="bilarf-title">
+                <p class="venue">SIGGRAPH (ACM TOG) <span class="separator" aria-hidden="true"></span> 2024</p>
+                <h3 id="bilarf-title"><a href="https://arxiv.org/abs/2406.00448">Bilateral Guided Radiance Field Processing</a></h3>
+                <p class="authors"><strong>Yuehao Wang</strong>, Chaoyi Wang, Bingchen Gong, Tianfan Xue</p>
+                <p class="award"><strong>Best Paper Honorable Mention</strong></p>
+                <!-- <p class="summary">We introduce 2D and 3D image signal processing (ISP) pipelines to radiance fields for handling photometric variation and retouching 3D scenes.</p> -->
+                <p class="software-impact"><strong>Available in R&D software: <a href="https://github.com/MrNeRF/LichtFeld-Studio">LichtFeld Studio</a> and <a href="https://github.com/nerfstudio-project/gsplat">gsplat</a>.</strong></p>
+                <ul class="paper-links" aria-label="Resources for the radiance field processing paper">
+                  <li><a href="https://arxiv.org/pdf/2406.00448">Paper</a></li>
+                  <li><a href="https://github.com/yuehaowang/bilarf">Code</a></li>
+                  <li><a href="https://bilarfpro.github.io/">Project page</a></li>
+                </ul>
+              </article>
+            </li>
+          </ol>
+        </section>
+
+        <section class="personal" aria-labelledby="personal-heading">
+          <h2 id="personal-heading">Outside of research</h2>
+          <p>I'm really into playing (electric) guitar, especially genres rooted in rock and blues.</p>
+        </section>
+      </main>
+
+      <footer><p>© 2026 Yuehao Wang</p></footer>
+    </div>
+  </body>
+</html>
