@@ -18,7 +18,7 @@
   --muted: #b5b0a6;
   --accent: #d4bc96;
   --link: var(--ink);
-  --honor: var(--accent);
+  --honor: #e49bb6;
   --rule: #45423c;
   --link-rule: #8e8679;
   --selection: #514939;
@@ -224,6 +224,7 @@ h3 a:hover { text-decoration: underline; }
 
 .award { color: var(--honor); }
 .software-impact { color: var(--accent); }
+.software-impact a { color: inherit; }
 
 .summary {
   margin-top: 13px;
